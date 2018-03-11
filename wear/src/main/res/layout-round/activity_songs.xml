@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wear_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gotoImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:paddingTop="5dp"
+        android:src="@drawable/go_to"/>
+
+    <android.support.wearable.view.WearableRecyclerView
+        android:id="@+id/songsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        tools:context=".activities.MainActivity"
+        tools:deviceIds="wear"/>
+
+    <RelativeLayout
+        android:id="@+id/emptyQueueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wear_background"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Your queue is empty"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Add some or just shuffle all"
+                android:textColor="@color/emptytextcolor"
+                android:textSize="14dp"/>
+
+            <android.support.wearable.view.CircledImageView
+                android:id="@+id/emptyQueueShuffleButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:src="@drawable/ic_shuffle_white_48dp"
+                app:circle_color="@color/wear_background"
+                app:circle_radius="25dp"
+                app:circle_radius_pressed="20dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

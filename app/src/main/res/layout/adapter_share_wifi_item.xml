@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/normal_blue">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="@dimen/simpletooltip_margin">
+
+        <RelativeLayout
+            android:id="@+id/upLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:padding="@dimen/dimen_5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/stringValue89"
+                        android:textColor="#313131"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <ImageView
+                        android:id="@+id/connectedImageView"
+                        android:layout_width="@dimen/simpletooltip_arrow_width"
+                        android:layout_height="@dimen/simpletooltip_arrow_width"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimen_1dp"
+                        android:src="@drawable/ic_wifi_tethering_black_36dp"
+                        android:visibility="visible"/>
+
+                    <com.muziko.controls.FreshDownloadView
+                        android:id="@+id/downloadProgress"
+                        android:layout_width="@dimen/dimen_70dp"
+                        android:layout_height="@dimen/dimen_70dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        app:circular_color="@android:color/transparent"
+                        app:circular_progress_color="@color/normal_blue"
+                        app:circular_radius="70dp"
+                        app:progress_text_size="16sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+                android:background="#e6e6e6"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

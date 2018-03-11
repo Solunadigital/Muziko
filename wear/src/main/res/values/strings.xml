@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Muziko</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="albums">Albums</string>
+    <string name="artists">Artists</string>
+    <string name="songs">Songs</string>
+    <string name="playlists">Playlist</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="title_activity_songs">SongsActivity</string>
+
+    <string name="unknown_artist">Unknown Artist</string>
+    <string name="unknown_album">Unknown Album</string>
+    <string name="unknown_genre">Unknown Genre</string>
+    <string name="title_activity_menu_one">MenuOneActivity</string>
+    <string name="title_activity_menu_confirm">MenuConfirmActivity</string>
+    <string name="title_activity_now_playing">NowPlayingActivity</string>
+</resources>

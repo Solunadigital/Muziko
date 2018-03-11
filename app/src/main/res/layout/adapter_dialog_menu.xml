@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                 android:id="@+id/ripple"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 app:rv_color="@color/ripple_light_blue"
+                                 app:rv_framerate="@integer/ripple_framerate"
+                                 app:rv_rippleDuration="@integer/ripple_duration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:adjustViewBounds="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/menu_delete"
+            />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_width"
+            android:gravity="center_vertical"
+            android:text="@string/delete"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</com.andexert.library.RippleView>

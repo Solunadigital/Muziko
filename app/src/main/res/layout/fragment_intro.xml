@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/introIcon"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_150dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/intro1_image"
+            />
+
+        <TextView
+            android:id="@+id/introText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/organize_tracks"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/introExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/simpletooltip_arrow_height"
+            android:gravity="center"
+            android:text="@string/organize_playlists"
+            android:textColor="#737373"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dimen_180dp"
+    android:layout_height="@dimen/dimen_180dp"
+    android:background="@color/transparent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageCover"
+        android:layout_width="@dimen/dimen_180dp"
+        android:layout_height="@dimen/dimen_180dp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@mipmap/placeholder"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_coverart">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:gravity="center_horizontal"
+            android:text="@string/stringValue93"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_coverart">
+
+        <TextView
+            android:id="@+id/artistText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:gravity="center_horizontal"
+            android:text="@string/stringValue41"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

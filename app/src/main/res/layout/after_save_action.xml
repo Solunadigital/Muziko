@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/dimen_300dp"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/simpletooltip_overlay_circle_offset"
+              android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/simpletooltip_arrow_height"
+        android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+        android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+        android:layout_marginTop="@dimen/simpletooltip_arrow_height"
+        android:text="@string/what_to_do_ringtone"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/button_make_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+        android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+        android:text="@string/make_default_ringtone"/>
+
+    <Button
+        android:id="@+id/button_choose_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+        android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+        android:text="@string/choose_contact"/>
+
+    <Button
+        android:id="@+id/button_do_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/simpletooltip_arrow_height"
+        android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+        android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="@string/do_nothing"/>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/mp3_search"
+        android:title="Search User"
+        yourapp:actionViewClass="android.support.v7.widget.SearchView"
+        yourapp:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/mp3_play_songs"
+        android:title="Play All Songs"
+        yourapp:showAsAction="never"/>
+
+    <item
+        android:id="@+id/mp3_mediascan"
+        android:title="Scan Media"
+        yourapp:showAsAction="never"/>
+
+    <item
+        android:id="@+id/mp3_share"
+        android:icon="@mipmap/share_icon"
+        android:title="Share Application"
+        yourapp:showAsAction="never"/>
+    <item
+        android:id="@+id/sharing_wifi"
+        app:showAsAction="never"
+        android:title="Receive a file" />
+    <item
+        android:id="@+id/mp3_exit"
+        android:title="Exit Application"
+        yourapp:showAsAction="never"/>
+
+</menu>

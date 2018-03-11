@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "367762687557",
+    "firebase_url": "https://muziko-48de4.firebaseio.com",
+    "project_id": "muziko-48de4",
+    "storage_bucket": "muziko-48de4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367762687557:android:9ae669cc5cba6da4",
+        "android_client_info": {
+          "package_name": "com.muziko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367762687557-urd3j7dp2qvuih8900gpfvn4u3m4cqh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr77nfF2wY0_faHpHX0_kZpC864pnbnV8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

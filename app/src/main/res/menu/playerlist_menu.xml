@@ -1,0 +1,87 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/player_search"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <!--<item-->
+    <!--android:id="@+id/media_route_menu_item"-->
+    <!--android:title="Cast"-->
+    <!--app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"-->
+    <!--app:showAsAction="always"/>-->
+
+    <!--<item-->
+    <!--android:id="@+id/share_audio"-->
+    <!--android:icon="@drawable/ic_screen_share_white_24dp"-->
+    <!--android:title="Share Audio"-->
+    <!--app:showAsAction="never">-->
+    <!--</item>-->
+
+    <item
+        android:id="@+id/player_view"
+        android:icon="@mipmap/ic_view_grid"
+        android:title="@string/grid_size"
+        app:showAsAction="never">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/grid_one"
+                    android:orderInCategory="200"
+                    android:title="@string/one"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_two"
+                    android:orderInCategory="201"
+                    android:title="@string/two"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_three"
+                    android:orderInCategory="202"
+                    android:title="@string/three"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_four"
+                    android:orderInCategory="203"
+                    android:title="@string/four"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/player_play_songs"
+        android:title="@string/play_all_songs"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/player_mediascan"
+        android:title="@string/scan_media"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/player_share"
+        android:icon="@mipmap/share_icon"
+        android:title="@string/share_application"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sharing_wifi"
+        app:showAsAction="never"
+        android:title="Receive a file" />
+    <item
+        android:id="@+id/player_exit"
+        android:title="@string/exit_application"
+        app:showAsAction="never"/>
+
+</menu>

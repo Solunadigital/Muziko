@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dimen_160dp"
+            android:layout_height="@dimen/dimen_160dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/register_phone" />
+
+        <TextView
+            android:id="@+id/introText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_width"
+            android:layout_marginTop="@dimen/simpletooltip_arrow_width"
+            android:gravity="center"
+            android:text="@string/link_phone"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.muziko.controls.IntlPhoneInput.IntlPhoneInput
+                android:id="@+id/intlPhoneInput"
+                android:layout_width="@dimen/dimen_200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/wave_height"
+                app:flagPaddingBottom="4dp"
+                app:flagPaddingEnd="4dp"
+                app:flagPaddingStart="4dp"
+                app:flagPaddingTop="4dp"
+                app:textColor="#313131"
+                app:textSize="24dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/auth_button"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/normal_blue"
+            android:paddingLeft="@dimen/simpletooltip_arrow_height"
+            android:paddingRight="@dimen/simpletooltip_arrow_height"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/link_mobile_caps"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

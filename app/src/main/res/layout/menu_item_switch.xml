@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nightonke.jellytogglebutton.JellyToggleButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ToggleButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dimen_5dp"
+    android:paddingLeft="@dimen/simpletooltip_overlay_circle_offset"
+    android:paddingRight="@dimen/simpletooltip_overlay_circle_offset"
+    android:paddingTop="@dimen/dimen_5dp"
+    app:jtbDuration="700"
+    app:jtbLeftBackgroundColor="@color/light_blue"
+    app:jtbLeftTextColor="@color/switchbutton"
+    app:jtbLeftThumbColor="@android:color/white"
+    app:jtbRightBackgroundColor="@color/yellow"
+    app:jtbRightTextColor="@android:color/white"
+    app:jtbRightThumbColor="@color/switchbutton"
+    />

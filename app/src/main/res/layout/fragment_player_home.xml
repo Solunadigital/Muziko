@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/miniplayerHeight"
+        android:layout_alignParentBottom="true" />
+
+    <com.muziko.controls.FastScroller.FastScrollRecyclerView
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        app:fastScrollAutoHide="true"
+        app:fastScrollAutoHideDelay="1000"
+        app:fastScrollPopupBgColor="@color/normal_blue"
+        app:fastScrollPopupTextColor="@android:color/white"
+        app:fastScrollThumbColor="@color/normal_blue"
+        app:fastScrollTrackColor="@android:color/transparent"/>
+
+</RelativeLayout>

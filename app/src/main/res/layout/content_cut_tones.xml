@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pause_bar_distance"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cutter_plus_bg"/>
+
+            <ImageButton
+                android:id="@+id/button_zoom_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/dimen_5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cutter_plus"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cutter_minus_bg"/>
+
+            <ImageButton
+                android:id="@+id/button_zoom_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cutter_minus"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="60%"
+        app:layout_widthPercent="100%">
+
+        <com.muziko.cutter.ringtone_lib.WaveformView
+            android:id="@+id/waveform"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="80%"/>
+
+        <com.muziko.cutter.ringtone_lib.MarkerView
+            android:id="@+id/startmarker"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:contentDescription="@string/stringValue46"
+            android:nextFocusDown="@+id/endmarker"
+            android:src="@mipmap/marker_left"/>
+
+        <com.muziko.cutter.ringtone_lib.MarkerView
+            android:id="@+id/endmarker"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:contentDescription="@string/stringValue47"
+            android:nextFocusUp="@+id/startmarker"
+            android:src="@mipmap/marker_right"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/miniplayerHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:layout_weight="2"
+            android:background="@drawable/cut_timer_bg">
+
+            <TextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/simpletooltip_overlay_circle_offset"
+                android:text="@string/start_time"
+                android:textColor="#a9a9a9"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/buttonPrevMain"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/simpletooltip_margin"
+            android:layout_weight="2"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/simpletooltip_margin"
+            android:scaleType="centerInside"
+            android:src="@drawable/previous_icon"/>
+
+        <ImageButton
+            android:id="@+id/buttonPlayMain"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/simpletooltip_margin"
+            android:layout_weight="3"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/simpletooltip_margin"
+            android:scaleType="centerInside"
+            android:src="@drawable/play_icon"/>
+
+        <ImageButton
+            android:id="@+id/buttonNextMain"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/simpletooltip_margin"
+            android:layout_weight="2"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/simpletooltip_margin"
+            android:scaleType="centerInside"
+            android:src="@drawable/next_icon"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:layout_weight="2"
+            android:background="@drawable/cut_timer_bg">
+
+            <TextView
+                android:id="@+id/endText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/simpletooltip_overlay_circle_offset"
+                android:text="@string/end_time"
+                android:textColor="#a9a9a9"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

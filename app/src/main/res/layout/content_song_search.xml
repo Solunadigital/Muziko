@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.muziko.activities.SearchSongsActivity"
+    tools:showIn="@layout/activity_song_search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/dimen_50dp"
+                                            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                                            android:background="#fff"
+                                            android:elevation="5dp"
+                                            android:visibility="gone"
+                                            card_view:cardCornerRadius="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+                    android:src="@mipmap/arrow_back"/>
+
+                <EditText
+                    android:id="@+id/editSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@+id/searchIcon"
+                    android:layout_toRightOf="@+id/backButton"
+                    android:background="@android:color/transparent"
+                    android:hint="Search Song"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textColorHint="#8d8d8d"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="@dimen/bubble_size"
+                    android:layout_height="@dimen/bubble_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:src="@mipmap/ic_blue_search"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/songs_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#fff"
+                    android:dividerHeight="@dimen/simpletooltip_animation_padding"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/dimen_50dp"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"/>
+
+            </FrameLayout>
+
+            <include
+                android:id="@+id/admobLayout"
+                layout="@layout/content_admob_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wave_height"
+                android:background="@color/light_blue">
+
+                <ProgressBar
+                    android:layout_width="@dimen/dimen_50dp"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/addText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/stringValue84"
+                    android:textColor="#fff"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

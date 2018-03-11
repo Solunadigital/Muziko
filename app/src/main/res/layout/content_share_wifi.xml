@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/miniplayerHeight"
+    android:clickable="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/trackLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="@dimen/simpletooltip_margin">
+
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:padding="@dimen/dimen_5dp">
+
+            <ImageView
+                android:id="@+id/imageThumb"
+                android:layout_width="@dimen/pause_bar_width"
+                android:layout_height="@dimen/pause_bar_width"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/upLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wave_height"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/imageLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/dummy_track"
+                        android:textColor="#313131"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/textDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1dp"
+                        android:maxLines="1"
+                        android:text="@string/dummy_artist"
+                        android:textColor="#727272"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+                android:background="#e6e6e6"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ActivityIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/emptywifi_icon"/>
+
+        <TextView
+            android:id="@+id/explainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ActivityIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_width"
+            android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+            android:gravity="center"
+            android:text="@string/no_connections_yet"
+            android:textColor="@color/emptytextcolor"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_100dp"
+            android:layout_centerInParent="true"
+            android:elevation="4dp"
+            android:visibility="visible"
+            app:mlpb_enable_circle_background="false"
+            app:mlpb_progress_color="@color/normal_blue"
+            app:mlpb_progress_stoke_width="5dp"/>
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/normal_blue"
+            android:textSize="18sp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <com.muziko.controls.FastScroller.FastScrollRecyclerView
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trackLayout"
+        android:visibility="gone"
+        app:fastScrollAutoHide="true"
+        app:fastScrollAutoHideDelay="1000"
+        app:fastScrollPopupBgColor="@color/normal_blue"
+        app:fastScrollPopupTextColor="@android:color/white"
+        app:fastScrollThumbColor="@color/normal_blue"
+        app:fastScrollTrackColor="@android:color/transparent"/>
+
+
+    <Button
+        android:id="@+id/wifibutton"
+        android:layout_width="@dimen/dimen_180dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_100dp"
+        android:drawableLeft="@drawable/ic_wifi_white_24dp"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:text="@string/start_wifi_direct"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme.Button"/>
+
+</RelativeLayout>

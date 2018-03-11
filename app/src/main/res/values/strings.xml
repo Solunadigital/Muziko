@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="START">START</string>
+
+    <string name="STOP">STOP</string>
+    <string name="Year">Y</string>
+    <string name="Month">M</string>
+    <string name="Day">D</string>
+    <string name="about">About</string>
+    <string name="about_page_desc"><![CDATA[Audio & music player, 5 band equalizer, id3 tag editor, MP3 & Ringtone cutter]]></string>
+    <string name="about_text"/>
+    <string name="about_title">About Muziko</string>
+
+    <string name="add_account">Add Account</string>
+    <string name="add_cloud_account">Please add a cloud account to upload to</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="add_favorite">Add Favorite</string>
+    <string name="add_ignore">Add To Ignore</string>
+    <string name="add_playlist">Add Playlist</string>
+    <string name="add_to_fav">Add To Favorites</string>
+    <string name="add_to_favs">Add To Favorites</string>
+    <string name="add_to_home">Add to Home</string>
+    <string name="add_to_library">Add To Library</string>
+    <string name="add_to_playlist">Add To Playlist</string>
+    <string name="add_to_queue">Add To Queue</string>
+
+    <string name="added_to_home_folders">Added as Home Folder</string>
+
+    <string name="admobInterstitial">ca-app-pub-6491023872523776/8390442927</string>
+
+    <string name="advanced_options_net_3gup_name">3G and Wifi</string>
+    <string name="advanced_options_net_any_name">Any network</string>
+    <string name="advanced_options_net_wifi_name">Wifi only</string>
+    <string name="advanced_options_type_battery_name">Conserve Battery</string>
+    <string name="advanced_options_type_custom_name">Custom</string>
+    <string name="advanced_options_type_same_as_battery_name">Same as for battery</string>
+    <string name="advanced_options_type_standard_name">Standard</string>
+    <string name="advanced_options_when_10_name">After ten tracks</string>
+    <string name="advanced_options_when_1_name">After every track</string>
+    <string name="advanced_options_when_25_name">After 25 tracks</string>
+    <string name="advanced_options_when_5_name">After five tracks</string>
+    <string name="advanced_options_when_never_name">When you press the scrobble now button</string>
+    <string name="advanced_search">Advanced Search</string>
+
+    <string name="album">Album</string>
+    <string name="album_art_cleared">Album art has been cleared</string>
+    <string name="album_art_updated">Album Art has been updated</string>
+    <string name="album_name">Album Name</string>
+    <string name="album_not_found">Album not found!</string>
+
+    <string name="albums">Albums</string>
+
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_title_failure">Error</string>
+    <string name="alert_title_success">Success</string>
+
+    <string name="all">All</string>
+
+    <string name="amazon">Amazon</string>
+    <string name="amazon_account_connected">Amazon account successfully connected</string>
+    <string name="amazon_connection_failed">Unable to connect Amazon account</string>
+
+    <string name="app_id"/>
+    <string name="app_name">Muziko</string>
+
+    <string name="arabic">Arabic</string>
+
+    <string name="artist">Artist</string>
+    <string name="artist_name">Muziko-Ringtone</string>
+
+    <string name="artists">Artists</string>
+
+    <string name="artwork_settings">Artwork Settings</string>
+
+    <string name="au_clip">Muziko_shared_auclip</string>
+
+    <string name="auth_bad_auth">Wrong username/password</string>
+    <string name="auth_client_banned">This version of the app is deprecated, please upgrade</string>
+    <string name="auth_internal_error">Internal error</string>
+    <string name="auth_just_error">Error, retrying…</string>
+    <string name="auth_network_error_retrying">Network error, retrying…</string>
+    <string name="auth_network_unfit">Not allowed to submit data on network, change in Options screen</string>
+    <string name="auth_server_error">Server error: %1, retrying…</string>
+    <string name="auth_timing_error">Client side timing error, retrying…</string>
+    <string name="auth_updating">Authenticating…</string>
+
+    <string name="auto_download_library">Auto sync library with cloud</string>
+    <string name="auto_download_library_desc">Library will sync automatically</string>
+    <string name="auto_download_streaming">Auto download playing file</string>
+    <string name="auto_download_streaming_desc">Muziko will download file when streaming</string>
+    <string name="auto_resume">Headset Detection</string>
+    <string name="auto_resume_bluetooth">Bluetooth Detection</string>
+    <string name="auto_resume_bluetooth_desc">Auto resume/pause when a bluetooth headset is detected</string>
+    <string name="auto_resume_desc">Auto resume/pause when a headset is detected</string>
+
+    <string name="bad_extension_error">Sorry, Muziko is not yet able to edit files of type</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-6491023872523776/3782654126</string>
+
+    <string name="bass">Bass</string>
+
+    <string name="block">Block</string>
+    <string name="block_contacts">Block Contacts</string>
+
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_rationale">You need to grant access to bluetooth for bluetooth options to work</string>
+
+    <string name="box">Box</string>
+    <string name="box_account_connected">Box account connected</string>
+    <string name="box_connection_failed">Unable to connect Box account</string>
+
+    <string name="buffering_song">Buffering song</string>
+
+    <string name="buy">Buy</string>
+    <string name="buy_now">BUY NOW</string>
+
+    <string name="by">by</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="cancel_caps">CANCEL</string>
+
+    <string name="change_language">Change Language</string>
+    <string name="change_language_desc">Change the language of Muziko</string>
+
+    <string name="choose">Choose</string>
+    <string name="choose_contact">Choose Contact</string>
+    <string name="choose_start_screen">Choose start screen</string>
+    <string name="choose_start_screen_desc">Screen to return to when opening the app</string>
+
+    <string name="claim">Claim</string>
+
+    <string name="clear_cache">Clear cache</string>
+    <string name="clear_credentials">Clear credentials</string>
+    <string name="clear_credentials_desc">Clear your actionUser credntials for Last.fm</string>
+
+    <string name="client_id">clident_id</string>
+    <string name="client_ver">client_ver</string>
+
+    <string name="close">Close</string>
+
+    <string name="cloud">Cloud</string>
+    <string name="cloud_account_already_added">Cloud account has already been added</string>
+    <string name="cloud_account_removed">Cloud account successfully removed</string>
+    <string name="cloud_drive_not_connected">Unable to process. Cloud drive still being started</string>
+    <string name="cloud_settings">Cloud Settings</string>
+
+    <string name="confirm_block_contacts">Are you want to block these contacts?</string>
+    <string name="confirm_clear_all_creds">Are you sure you want to clear your actionUser credentials for all logged in accounts? This will also remove any unsubmitted scrobbles.</string>
+    <string name="confirm_delete_all_sc">Are you sure you want to clear all tracks in the cache for %1? This operation cannot be undone.</string>
+    <string name="confirm_delete_all_sc_from_all">Are you sure you want to clear all tracks in the cache? This operation cannot be undone.</string>
+    <string name="confirm_delete_sc">Are you sure you don\'t want to scrobble this track to %1? This operation cannot be undone.</string>
+    <string name="confirm_delete_sc_from_all">Are you sure you don\'t want to scrobble this track? This operation cannot be undone.</string>
+
+    <string name="connecting_cloud_drive">Connecting Cloud Drive</string>
+
+    <string name="connection_error">Connection error retrieving lyrics</string>
+
+    <string name="contacts">Contacts</string>
+
+    <string name="continue_text">Continue</string>
+
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+
+    <string name="coverart_dl_progress">Downloading cover art… %1$d/%2$d - Swipe to cancel</string>
+
+    <string name="create">CREATE</string>
+    <string name="create_playlist">Create Playlist</string>
+
+    <string name="creds_required">Credentials REQUIRED to work properly</string>
+
+    <string name="current_version">Current Version</string>
+
+    <string name="cut">Cut</string>
+    <string name="cut_tones">CUT TONES</string>
+
+    <string name="cutter">MP3 Cutter</string>
+    <string name="cutter_desc">Cut the best part of your MP3 song and use it as your ringtone</string>
+
+    <string name="data_charges_may_apply">Data charges may be applied. Please use wifi to avoid data charges</string>
+
+    <string name="date_added">Date Added</string>
+
+    <string name="default_sync_location">Default Sync Location</string>
+    <string name="default_sync_location_desc">The sd card is not available. Do you want to switch to using local storage?</string>
+
+    <string name="delete">Delete</string>
+    <string name="delete_from_playlist">Delete from playlist</string>
+    <string name="delete_from_queue">Delete from queue</string>
+    <string name="delete_song">Delete Song</string>
+    <string name="delete_song_confirm">This will delete song permanently from this device, do you want to proceed ?</string>
+    <string name="delete_songs">Delete Songs</string>
+    <string name="delete_tmp_error">Error deleting temporary file</string>
+
+    <string name="desired_start_time">Choose your desired time to start the song</string>
+
+    <string name="details">Details</string>
+
+    <string name="disabled">Disabled</string>
+
+    <string name="display_album_cover">Artwork on Lock Screen</string>
+    <string name="display_album_cover_desc">Display album cover on lock screen while playing</string>
+    <string name="display_artwork">Show Artwork</string>
+    <string name="display_artwork_desc">Display artwork for album and artist</string>
+
+    <string name="do_nothing">Do Nothing</string>
+
+    <string name="done">Done</string>
+
+    <string name="dont_show_again">Don\'t show again</string>
+    <string name="dont_sync">Don\'t Sync</string>
+    <string name="dont_sync_fav">Don\'t Sync Favourite</string>
+    <string name="dont_sync_fav_confirm">Are you sure you don\'t want to sync this song?</string>
+    <string name="dont_sync_playlist">Don\'t Sync Playlist</string>
+    <string name="dont_sync_playlist_confirm">Are you sure you don\'t want to sync this playlist?</string>
+
+    <string name="down_artwork_desc">Download missing artist and album artwork</string>
+
+    <string name="download">Download</string>
+    <string name="download_artwork">Download Artwork</string>
+    <string name="download_artwork_wifi">Download only on Wifi</string>
+    <string name="download_artwork_wifi_desc">Download artwork only when WiFI is connected</string>
+    <string name="download_cancelled">Download Cancelled</string>
+    <string name="download_cloud_track">Download</string>
+    <string name="download_complete">Download complete</string>
+    <string name="download_error">Download Error</string>
+    <string name="download_fav_track">Downloading favourites</string>
+    <string name="download_progress">Download in progress - Swipe to cancel</string>
+    <string name="download_library_track">Downloading library</string>
+    <string name="download_missing_lyrics">Download Lyrics</string>
+    <string name="download_missing_lyrics_desc">Download missing lyrics automatically</string>
+    <string name="download_playlist_track">Downloading playlist</string>
+
+    <string name="downloading_files">Downloading</string>
+
+    <string name="drive_account_connected">Google Drive account connected</string>
+    <string name="drive_connection_failed">Unable to connect Google Drive account</string>
+
+    <string name="drives">Drives</string>
+
+    <string name="dropbox">DropBox</string>
+    <string name="dropbox_account_connected">Dropbox account connected</string>
+    <string name="dropbox_connection_failed">Unable to connect DropBox account</string>
+
+    <string name="dummy_artist">Arijit Singh</string>
+    <string name="dummy_artist2">Judith ma..</string>
+    <string name="dummy_email">info@gmail.com</string>
+    <string name="dummy_track">Till the end of Earth</string>
+    <string name="dummy_track2">Don\'t Cry For ...</string>
+
+    <string name="duration">Duration</string>
+    <string name="duration_title">Duration : </string>
+
+    <string name="enable_lock_screen">Lock screen control</string>
+    <string name="enable_lockscreen_desc">Enable lock screen controls</string>
+    <string name="enable_scrobbling">Last.fm Scrobbling</string>
+    <string name="enable_scrobbling_desc">Enable scrobbling via Last.fm/Simple last.fm</string>
+
+    <string name="end_marker">End marker</string>
+    <string name="end_time">End Time</string>
+
+    <string name="english">English</string>
+
+    <string name="enter_cloud_account_name">Please enter new cloud account name</string>
+    <string name="enter_folder_name">Enter folder name</string>
+    <string name="enter_name_playlist">Enter name playlist!</string>
+
+    <string name="equalizer">Equalizer</string>
+    <string name="equalizer_desc">Powerful 5 band equalizer with large number of presets</string>
+
+    <string name="err_auth_accpick">NO ACCOUNT SELECTED!</string>
+    <string name="err_auth_dono">UNSPECIFIED GOOGLE DRIVE\nACCESS FAILURE!</string>
+    <string name="err_auth_nogo">ACCESS NOT AUTHORIZED!</string>
+    <string name="err_auth_sha">CHECK PackageName / SHA1\nin Developers Console!</string>
+
+    <string name="error_server_prompt">Okay to send anonymous data about this error to Muziko.com so</string>
+
+    <string name="exclude_folder">Exclude Folder</string>
+
+    <string name="exit_application">Exit Application</string>
+
+    <string name="fav_sync_manager">Favourite Sync Manager</string>
+
+    <string name="favourites">Favourites</string>
+
+    <string name="file_exists">File already exists</string>
+    <string name="file_name">File name</string>
+    <string name="file_save_title">Save As:</string>
+
+    <string name="filter_cloud">Filter Cloud</string>
+    <string name="filter_list">Filter List</string>
+    <string name="filter_storage">Filter Storage</string>
+
+    <string name="firebase">Firebase</string>
+
+    <string name="firebase_cloud_delete_downloading">Download is cancelled</string>
+    <string name="firebase_cloud_delete_uploading">Upload will just happen after a delete</string>
+    <string name="firebase_cloud_downloading_downloading">Downloading, please wait</string>
+    <string name="firebase_cloud_downloading_uploading">Uploading, please wait</string>
+    <string name="firebase_cloud_uploading_downloading">Already uploading elsewhere, wait for the upload to finish</string>
+    <string name="firebase_cloud_uploading_uploading">It can\'t upload yet as the file is currently being changed elsewhere</string>
+
+    <string name="folder_excluded">Folder excluded</string>
+    <string name="folder_hidden">Folder hidden</string>
+    <string name="folder_included">Folder included</string>
+    <string name="folder_name">Folder Name</string>
+    <string name="folder_unhidden">Folder un-hidden</string>
+
+    <string name="four">Four</string>
+
+    <string name="general">General</string>
+
+    <string name="genres">Genres</string>
+
+    <string name="get_your_device_closer_to_the_sound_and_try_again">Get your device closer to the sound and try again.</string>
+
+    <string name="go_to">Go to</string>
+    <string name="go_to_album">Go to Album</string>
+    <string name="go_to_artist">Go to Artist</string>
+
+    <string name="google_drive">Google Drive</string>
+
+    <string name="gotit">GOT IT</string>
+
+    <string name="grant_sd_perm">Do you want to grant SD card permissions so tracks can be deleted?</string>
+
+    <string name="grid_size">Grid size</string>
+
+    <string name="hide_folder">Hide Folder</string>
+    <string name="hide_hidden_folders">Hide hidden folders</string>
+    <string name="hide_songs">Hide songs</string>
+    <string name="hide_songs_less">Dont show songs less than</string>
+    <string name="hide_songs_less_desc">Hide songs with a duration less than this value (minutes)</string>
+    <string name="hide_unknown">Hide unknown</string>
+    <string name="hide_unknown_desc">Hide unknown artists, album, genre</string>
+
+    <string name="hine_songs_less">Hide songs less than X mins</string>
+
+    <string name="ignore">Ignore</string>
+
+    <string name="include_folder">Include Folder</string>
+
+    <string name="install_file_manager">Please install a File Manager.</string>
+
+    <string name="internal_storage">Internal Storage</string>
+
+    <string name="invite_earn">Invite </string>
+
+    <string name="inviteandearn">Invite and Earn</string>
+    <string name="inviteandearn_desc">Invite 50 friends on Muziko and get rid of ads</string>
+
+    <string name="invited_x_friends">You have invited 0 friends</string>
+
+    <string name="item_image_contentDescription">Country flag</string>
+    <string name="item_preview_country">Israel (‫ישראל‬‎)</string>
+    <string name="item_preview_dialCode">+972</string>
+
+    <string name="john_doe">John Doe</string>
+
+    <string name="later">LATER</string>
+
+    <string name="latest_version">Latest version</string>
+
+    <string name="library">Library</string>
+
+    <string name="licenses">Licenses</string>
+
+    <string name="limited_network">Limited Network</string>
+
+    <string name="link_mobile">Link Mobile</string>
+    <string name="link_mobile_caps">LINK MOBILE PHONE</string>
+    <string name="link_phone">Link your phone number to make it easier for your friends to find you</string>
+
+    <string name="listen_to_10_seconds_song">Listen to 10 seconds song</string>
+
+    <string name="listening">Listening</string>
+    <string name="listening_for_friends">Listening for friends...</string>
+
+    <string name="local">Local</string>
+
+    <string name="logged_in_as">Logged in as: %1</string>
+    <string name="logged_in_just">Logged in as:</string>
+
+    <string name="logout">Logout</string>
+
+    <string name="loudness">Loudness</string>
+
+    <string name="loved_track">Loved Track</string>
+
+    <plurals name="lyrics_dl_finished_desc">
+        <item quantity="one">Downloaded the lyrics for %1$d song</item>
+        <item quantity="other">Downloaded the lyrics for %1$d songs</item>
+    </plurals>
+    <string name="lyrics_dl_progress">Downloading lyrics… %1$d/%2$d - Swipe to cancel</string>
+    <string name="lyrics_synced">Lyrics are synchronized. If you edit them synchronization will be lost</string>
+
+    <string name="make_default_ringtone">Make Default Ringtone</string>
+
+    <string name="manage_artwork">Manage Artwork</string>
+    <string name="manage_tabs">Manage tabs</string>
+    <string name="manage_tabs_desc">Reorder and hide tabs</string>
+
+    <string name="maybe_later">Maybe Later</string>
+
+    <string name="md5_complete">Index complete</string>
+    <string name="md5_desc">Indexing in progress - Swipe to cancel</string>
+    <string name="md5_progress">%1$d/%2$d - Swipe to cancel</string>
+    <string name="md5_title">Indexing music library</string>
+
+    <string name="merge">MERGE</string>
+
+    <string name="most">Most</string>
+
+    <string name="move_to_ignore">Move to Ignore Folder</string>
+
+    <string name="mp3_cutter">MP3 Cutter</string>
+
+    <string name="multi_tagedit_error">"You need to select at least one track from internal storage"</string>
+    <string name="multi_tagedit_warning">"Due to Android 4.4+ (KitKat) changes, editing tags of tracks stored on the SD-card might not work. SD card tracks have been excluded."</string>
+
+    <string name="muziko_requires_write_perm">Muziko requires the write settings permission to set your default ringtone. You need to enable it on the settings screen.</string>
+
+    <string name="my_contacts">My Contacts</string>
+    <string name="my_history">My History</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_qr_code">My QR Code</string>
+
+    <string name="navigation_drawer_close">close dialog drawer</string>
+    <string name="navigation_drawer_open">open dialog</string>
+
+    <string name="network_lost">Network lost</string>
+
+    <string name="never">Never</string>
+
+    <string name="new_features">New Features</string>
+    <string name="new_playlist_caps">NEW PLAYLIST</string>
+    <string name="new_string">New</string>
+    <string name="new_tab">New</string>
+    <string name="new_version">New Version</string>
+
+    <string name="next">NEXT</string>
+
+    <string name="nickname">Nickname</string>
+
+    <string name="no_cloud_accounts">No cloud accounts</string>
+    <string name="no_cloud_accounts_desc">Currently there are no cloud accounts added. Go ahead and add some.</string>
+    <string name="no_connections_yet">no connections yet</string>
+    <string name="no_copy_track">Copy Track Failed</string>
+    <string name="no_current_track">No Current Song Available</string>
+    <string name="no_extension_error">Sorry, Muziko can\'t edit a file if it doesn\'t have an</string>
+    <string name="no_friends">No friends yet</string>
+    <string name="no_heart_track">Heart Track Failed</string>
+    <string name="no_lastFm">Please enter your last.fm credentials</string>
+    <string name="no_lyrics">No lyrics found. please check the artist and track name</string>
+    <string name="no_network_connection">Internet is required</string>
+    <string name="no_playlists_yet_create_a_playlist">No playlists yet, create a playlist</string>
+    <string name="no_results">No Results </string>
+    <string name="no_scrobbles_in_cache">There are no cached scrobbles</string>
+    <string name="no_song_in_queue">No song in queue</string>
+    <string name="no_songs_added">Currently there are no songs added. Go ahead and add some or just shuffle all.</string>
+    <string name="no_songs_in_chart">No songs in the chart yet</string>
+    <string name="no_songs_in_ignore">No songs in ignore yet</string>
+    <string name="no_songs_yet_start_adding_songs_to_favorite">No songs yet, start adding songs to favorite</string>
+    <string name="no_songs_yet_start_adding_songs_to_library">No songs yet, start adding songs to library</string>
+    <string name="no_space_error">Your SD card is full, there is not enough space to save this</string>
+    <string name="no_unique_filename">Unable to find unique filename</string>
+    <string name="no_want_save">I dont want to save it</string>
+
+    <string name="none">None</string>
+
+    <string name="not_connected">Not connected</string>
+    <string name="not_logged_in">Not logged in</string>
+
+    <string name="notification_cache">Notification Cache</string>
+
+    <string name="now_playing">Now Playing</string>
+
+    <string name="nowplaying_last_at">Last now playing notification submitted at:</string>
+    <string name="nowplaying_last_fail_at">Last scrobble submission failed at:</string>
+
+    <string name="number_of_songs">Number of Songs</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="one">One</string>
+    <string name="one_week_premium">One week of Premium!</string>
+    <string name="one_week_premium_desc">Congratulations, you are a premium actionUser now. Enjoy using 7 days ad free.</string>
+    <string name="one_week_premium_error">We were unable to register your install at this time as there was no internet connection. We will try again next time. Once registered you will get your 7 days of premium access.</string>
+
+    <string name="onedrive">OneDrive</string>
+    <string name="onedrive_account_connected">OneDrive account connected</string>
+    <string name="onedrive_connection_failed">Unable to connect OneDrive account</string>
+
+    <string name="organize_playlists">Organize your playlist and favourite tracks</string>
+    <string name="organize_tracks">Organize your Tracks</string>
+
+    <string name="override">Override</string>
+
+    <string name="pause">Pause</string>
+
+    <string name="perm_required">Permission required</string>
+
+    <string name="phone_face_down">Phone face down</string>
+    <string name="phone_face_down_desc">Action to take when phone face down</string>
+    <string name="phone_face_up">Phone Face up</string>
+    <string name="phone_face_up_desc">Action to take when phone face up</string>
+
+    <string name="play">Play</string>
+    <string name="play_all_songs">Play All</string>
+    <string name="play_error">Unable to play this media file</string>
+    <string name="play_from">Play from</string>
+    <string name="play_last_song_to_end">Play last song to end</string>
+    <string name="play_list_name">Play List Name</string>
+    <string name="play_next">Play Next</string>
+    <string name="play_x_times">Play X Times</string>
+
+    <string name="playback_settings">Playback Settings</string>
+
+    <string name="playlist_name">Playlist Name</string>
+    <string name="playlist_not_synced">Playlist won\'t be synced</string>
+    <string name="playlist_synced">Playlist will be synced</string>
+
+    <string name="please_wait_with_dots">Please wait...</string>
+
+    <string name="preset">Preset</string>
+
+    <string name="preview_track">Preview Track</string>
+
+    <string name="privacy_policy_title">Muziko Privacy Policy</string>
+
+    <string name="problem_connecting_google">Problem connecting with Google</string>
+    <string name="problem_getting_folders">Problem getting folders</string>
+
+    <string name="profile_page">Profile page</string>
+
+    <string name="progress_dialog_loading">Loading...</string>
+
+    <string name="queue_empty">Queue empty</string>
+    <string name="queue_is_empty">Your queue is empty</string>
+
+    <string name="rate_us">Rate Us</string>
+
+    <string name="rating">Rating</string>
+
+    <string name="read_error">Error reading file</string>
+
+    <string name="recent">Recent</string>
+
+    <string name="record_error">Error launching Sound Recorder</string>
+
+    <string name="register_share_music">Register to share music with your friends</string>
+    <string name="register_using_google">Register using Google</string>
+
+    <string name="remove">Remove</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="remove_ads_now">Remove ads now</string>
+    <string name="remove_after">Remove After</string>
+    <string name="remove_existing">Remove existing playlists</string>
+    <string name="remove_fav">Remove From Favorites</string>
+    <string name="remove_from_favs">Remove From Favorites</string>
+    <string name="remove_from_home">Remove from Home</string>
+    <string name="remove_from_library">Remove From Library</string>
+    <string name="remove_song_from_queue_after_x_times">Remove song from queue after X times</string>
+
+    <string name="removed">Removed</string>
+    <string name="removed_from_homer_folders">Removed as Home Folder</string>
+
+    <string name="rename">Rename</string>
+    <string name="rename_cloud_account">Rename cloud account</string>
+    <string name="rename_cloud_account_error">Unable ro rename cloud account</string>
+
+    <string name="reset_play_count">Reset Play Count</string>
+    <string name="reset_stats">Reset statistics</string>
+
+    <string name="reverb">Reverb</string>
+
+    <string name="reverse">Reverse</string>
+
+    <string name="ringtone_name">Ringtone Name</string>
+    <string name="ringtone_permissions">Write settings permission wasn\'t prov</string>
+    <string name="ringtone_type">Ringtone Type</string>
+
+    <string name="save">Save</string>
+    <string name="save_success_message">Saved!</string>
+
+    <string name="saving_album_art">Saving Album Art</string>
+
+    <string name="sc_sort_album_asc">Album, ascending</string>
+    <string name="sc_sort_album_desc">Album, descending</string>
+    <string name="sc_sort_artist_asc">Artist, ascending</string>
+    <string name="sc_sort_artist_desc">Artist, descending</string>
+    <string name="sc_sort_track_asc">Track name, ascending</string>
+    <string name="sc_sort_track_desc">Track name, descending</string>
+    <string name="sc_sort_when_asc">Time played, ascending</string>
+    <string name="sc_sort_when_desc">Time played, descending</string>
+
+    <string name="scan">Scan</string>
+    <string name="scan_media">Scan Media</string>
+
+    <string name="scrobble_last_at">Last scrobble submitted at:</string>
+    <string name="scrobble_last_fail_at">Last scrobble submission failed at:</string>
+    <string name="scrobble_now">Scrobble now</string>
+    <string name="scrobble_status">Status</string>
+    <string name="scrobble_status_desc">Show scrobbling stats</string>
+
+    <string name="scrobbles_cache_nonum">Scrobbles in local cache:</string>
+
+    <string name="sd_card">SD Card</string>
+
+    <string name="search">Search</string>
+    <string name="search_hint">Search</string>
+    <string name="search_online">Search online</string>
+    <string name="search_song_or_artist">Search song or artist</string>
+    <string name="search_user">Search User</string>
+
+    <string name="select_album_art">Select album art</string>
+    <string name="select_language">Select language</string>
+    <string name="select_location">Select Location</string>
+    <string name="select_mp3s">SELECT MP3</string>
+
+    <string name="send">Send</string>
+    <string name="send_au_clip">Send AU-Clip</string>
+    <string name="send_song">Send Song</string>
+    <string name="send_wifi">Send Wifi</string>
+
+    <string name="server_client_id">367762687557-urd3j7dp2qvuih8900gpfvn4u3m4cqh8.apps.googleusercontent.com</string>
+    <string name="server_later">Ask later</string>
+    <string name="server_never">Never</string>
+    <string name="server_prompt">Okay to send anonymous data about the ringtones and other sounds</string>
+    <string name="server_title">Share your data!</string>
+    <string name="server_yes">OK to send</string>
+
+    <string name="set_as_default_account">Set as default account</string>
+    <string name="set_as_ringtone">Set As Ringtone</string>
+    <string name="set_as_start_directory">Set as start directory</string>
+    <string name="set_ringtone">Set Ringtone</string>
+    <string name="set_ringtone_failed">Unable to set default ringtone. Permission missing</string>
+    <string name="set_start_time">Set Start Time</string>
+    <string name="set_your_desired_position">Set your desired position</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="shake_sensitivity">Shake sensitivity</string>
+
+    <string name="share">Share</string>
+    <string name="share_application">Share Application</string>
+    <string name="share_code">Share Code</string>
+
+    <string name="sharesongs">Share Songs</string>
+    <string name="sharesongs_desc">Easy to share sonngs online with your contacts and wifi-direct</string>
+
+    <string name="show_folder">Show Folder</string>
+    <string name="show_hidden_folders">Show hidden folders</string>
+
+    <string name="shuffle_all">Shuffle All</string>
+    <string name="shuffle_all_caps">SHUFFLE ALL</string>
+    <string name="shuffle_off">Shuffle Off</string>
+    <string name="shuffle_on">Shuffle On</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_desc">Sign up for an account at Last.fm</string>
+
+    <string name="skip">SKIP</string>
+
+    <string name="sleep_timer">Sleep Timer</string>
+    <string name="sleep_timer_caps">SLEEP TIMER</string>
+
+    <string name="some_permissions_were_denied">Some permissions were denied</string>
+
+    <string name="song_added_to_fav">Song added to Favorites</string>
+    <string name="song_added_to_library">Song added to Library</string>
+    <string name="song_is_ready">Song Ready</string>
+    <string name="song_leading_space"> Song</string>
+    <string name="song_not_synced">Song won\'t be synced</string>
+    <string name="song_removed_from_favs">Song removed from Favorites</string>
+    <string name="song_removed_from_library">Song removed from Library</string>
+    <string name="song_synced">Song will be synced</string>
+
+    <string name="songs_added_fav">Songs added to Favorites</string>
+    <string name="songs_leading_space"> Songs</string>
+
+    <string name="sort_by_a_to_z">Sort By A to Z</string>
+    <string name="sort_by_date_ascending">Sort By Date Ascending</string>
+    <string name="sort_by_date_descending">Sort By Date Descending</string>
+    <string name="sort_by_duration_ascending">Sort By Duration Ascending</string>
+    <string name="sort_by_duration_descending">Sort By Duration Descending</string>
+    <string name="sort_by_z_to_a">Sort By Z to A</string>
+
+    <string name="spend_4_99_one_time_on_muziko_and_never_see_ads">Spend 4.99$ one time on Muziko and never see ads</string>
+
+    <string name="start_marker">Start marker</string>
+    <string name="start_screen">Start Screen</string>
+    <string name="start_time">Start Time</string>
+    <string name="start_wifi_direct">START</string>
+
+    <string name="starting_scan">Starting scan</string>
+
+    <string name="stats_scrobbles">Total tracks scrobbled:</string>
+
+    <string name="stop">Stop</string>
+    <string name="stop_wifi_direct">STOP</string>
+
+    <string name="storage">Storage</string>
+
+    <string name="stream">Stream</string>
+
+    <string name="stringValue102"/>
+
+    <string name="stringValue103">ABC</string>
+
+    <string name="stringValue104">DEF</string>
+
+    <string name="stringValue105">GHI</string>
+
+    <string name="stringValue106">JKL</string>
+
+    <string name="stringValue107">MNO</string>
+
+    <string name="stringValue108">PQRS</string>
+
+    <string name="stringValue109">TUV</string>
+
+    <string name="stringValue110">9</string>
+
+    <string name="stringValue111">WXYZ</string>
+
+    <string name="stringValue112">DEL</string>
+
+    <string name="stringValue113">Info</string>
+
+    <string name="stringValue13">05:44</string>
+
+    <string name="stringValue14">00:00:00</string>
+
+    <string name="stringValue16">10</string>
+
+    <string name="stringValue17">20</string>
+
+    <string name="stringValue18">30</string>
+
+    <string name="stringValue19">40</string>
+
+    <string name="stringValue20">50</string>
+
+    <string name="stringValue21">60</string>
+
+    <string name="stringValue22">Cancel</string>
+
+    <string name="stringValue25">20/02/2017</string>
+
+    <string name="stringValue40">0:00</string>
+
+    <string name="stringValue41">4:19</string>
+
+    <string name="stringValue46">Start MarkerView</string>
+
+    <string name="stringValue47">End MarkerView</string>
+
+    <string name="stringValue48">15db</string>
+
+    <string name="stringValue49">0db</string>
+
+    <string name="stringValue50">-15db</string>
+
+    <string name="stringValue51">60Hz</string>
+
+    <string name="stringValue52">230Hz</string>
+
+    <string name="stringValue53">910Hz</string>
+
+    <string name="stringValue54">3Hz</string>
+
+    <string name="stringValue55">0Hz</string>
+
+    <string name="stringValue61">32</string>
+
+    <string name="stringValue62">0</string>
+
+    <string name="stringValue65">1</string>
+
+    <string name="stringValue66">2</string>
+
+    <string name="stringValue67">3</string>
+
+    <string name="stringValue68">4</string>
+
+    <string name="stringValue69">5</string>
+
+    <string name="stringValue70">6</string>
+
+    <string name="stringValue71">7</string>
+
+    <string name="stringValue72">8</string>
+
+    <string name="stringValue73">1:00</string>
+
+    <string name="stringValue74">70</string>
+
+    <string name="stringValue75">80</string>
+
+    <string name="stringValue76">90</string>
+
+    <string name="stringValue77">100</string>
+
+    <string name="stringValue78">110</string>
+
+    <string name="stringValue79">120</string>
+
+    <string name="stringValue83">aaaaa</string>
+
+    <string name="stringValue84">ADD</string>
+
+    <string name="stringValue85">Login</string>
+
+    <string name="stringValue86">2:59</string>
+
+    <string name="stringValue87">Length: 00:00</string>
+
+    <string name="stringValue88">(0 Song)</string>
+
+    <string name="stringValue89">Bradley Locke</string>
+
+    <string name="stringValue90">+66929169300</string>
+
+    <string name="stringValue91">0 Song</string>
+
+    <string name="stringValue92">00:10</string>
+
+    <string name="stringValue93">title</string>
+
+    <string name="stringValue98">Header</string>
+
+    <string name="stringValue99">00:20:00</string>
+
+    <string name="subscriptions">Subscriptions</string>
+
+    <string name="swipe_to_cancel">Swipe to cancel</string>
+
+    <string name="sync">Sync</string>
+    <string name="sync_fav">Sync Favourite</string>
+    <string name="sync_fav_confirm">Are you sure you want to sync this song?</string>
+    <string name="sync_favs">Sync Favourites</string>
+    <string name="sync_favs_desc">Favourites will sync to cloud</string>
+    <string name="sync_location">Sync Location</string>
+    <string name="sync_location_desc">Sync to internal or SD storage</string>
+    <string name="sync_pending">Sync Pending</string>
+    <string name="sync_pending_desc">Muziko cloud sync pending index job</string>
+    <string name="sync_playlist">Sync Playlist</string>
+    <string name="sync_playlist_confirm">Are you sure you want to sync this playlist?</string>
+    <string name="sync_playlists">Sync Playlists</string>
+    <string name="sync_playlists_desc">Playlists will sync to cloud</string>
+
+    <string name="syncing_with_muziko_cloud_please_wait">Syncing with Muziko cloud, please wait</string>
+
+    <string name="tag_edit">Tag Edit</string>
+    <string name="tag_editor">Tag Editor</string>
+    <string name="tag_editor_desc">Tag editor makes it easier to organise your song library</string>
+
+    <string name="tap_to_try_again">Tap to try again</string>
+
+    <string name="thai">Thai</string>
+
+    <string name="three">Three</string>
+
+    <string name="threed_effect">3D Effect</string>
+
+    <string name="time_seconds">seconds</string>
+
+    <string name="title">Title</string>
+    <string name="title_activity_favourites">FavouritesActivity</string>
+    <string name="title_activity_folders">FoldersActivity</string>
+    <string name="title_activity_most_played">MostPlayedActivity</string>
+    <string name="title_activity_mp3_cutter">MP3CutterActivity</string>
+    <string name="title_activity_mp3_cutter_new">Mp3CutterActivityNew</string>
+    <string name="title_activity_negative_folder">NegativeFolderActivity</string>
+    <string name="title_activity_now_playing">NowPlayingActivity</string>
+    <string name="title_activity_player_list">PlayerListActivity</string>
+    <string name="title_activity_playlist">PlaylistActivity</string>
+    <string name="title_activity_playlist_songs">PlaylistSongsActivity</string>
+    <string name="title_activity_recent">RecentActivityActivity</string>
+    <string name="title_activity_search">Search</string>
+
+    <string name="too_small_error">Can\'t save a file that small, try making it longer.</string>
+
+    <string name="track_not_found">Track not found. It may have been moved or deleted</string>
+    <string name="track_number">Track Number</string>
+    <string name="track_preview">Track Preview</string>
+    <string name="track_title">Track Title</string>
+
+    <string name="tracks">Tracks</string>
+    <string name="home">Home</string>
+
+
+    <string name="transition_name_coverart">transition:COVERART</string>
+
+    <string name="trending_songs">Trending Songs</string>
+
+    <string name="try_to_play_url">Try to play this url?</string>
+
+    <string name="turkish">Turkish</string>
+
+    <string name="two">Two</string>
+
+    <string name="type_alarm">Alarm</string>
+    <string name="type_music">Music</string>
+    <string name="type_notification">Notification</string>
+    <string name="type_ringtone">Ringtone</string>
+
+    <string name="unable_to_create_playlist">Unable to create playlist!</string>
+    <string name="unable_to_identify_song">Unable to identify song.</string>
+
+    <string name="unblock_contacts">Unblock Contacts</string>
+
+    <string name="undo">UNDO</string>
+
+    <string name="unknown_album">Unknown Album</string>
+    <string name="unknown_artist">Unknown Artist</string>
+    <string name="unknown_genre">Unknown Genre</string>
+    <string name="unknown_mapi">Unknown app (pre SLS v1.2.3)</string>
+
+    <string name="update_available">Update Available</string>
+    <string name="update_avatar">Update your avatar or username</string>
+    <string name="update_library_wifi">Sync over Wifi only</string>
+    <string name="update_library_wifi_desc">Sync library, favs and playlists over Wifi only</string>
+    <string name="update_muziko_prompt">Update to the latest version of Muziko to enjoy all the latest features.</string>
+    <string name="update_now">Update</string>
+
+    <string name="upload">Upload</string>
+    <string name="upload_cancelled">Upload Cancelled</string>
+    <string name="upload_complete">Upload complete</string>
+    <string name="upload_error">Upload Error</string>
+    <string name="upload_fav_track">Uploading favourites</string>
+    <string name="upload_library_track">Uploading library</string>
+    <string name="upload_playlist_track">Uploading playlist</string>
+    <string name="upload_progress">Upload in progress - Swipe to cancel</string>
+
+    <string name="uploading_file">Uploading file</string>
+
+    <string name="user_credentials">User credentials</string>
+    <string name="user_credentials_desc">Enter your actionUser credntials for Last.fm</string>
+    <string name="user_credentials_summary">Set username and password for your %1 account</string>
+
+    <string name="version">version</string>
+
+    <string name="warning">Warning</string>
+    <string name="warning_stream_data">Show warning when stream over data</string>
+    <string name="warning_stream_data_desc">Show warning when try to stream over mobile data</string>
+
+    <string name="what_to_do_ringtone">What To Do with Ringtone ?</string>
+
+    <string name="wifi_share">Wifi Share</string>
+
+    <string name="write_error">Error writing file</string>
+    <string name="write_settings_perm">Write settings permission wasn\'t provided. Muziko can\'t set default ringtone</string>
+
+    <string name="year">Year</string>
+
+    <string name="yes">YES</string>
+
+    <string name="you_can_restore_ignore_later">You can later restore it from ignore folder, are you sure you want to ignore it?</string>
+    <string name="no_internet_for_register">Please connect to internet to register</string>
+</resources>

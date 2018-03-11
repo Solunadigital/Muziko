@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.muziko.activities.InviteActivity"
+    tools:showIn="@layout/activity_invite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/simpletooltip_margin"
+        android:layout_weight="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/simpletooltip_arrow_height"
+            android:gravity="center"
+            android:text="@string/my_qr_code"
+            android:textColor="#656565"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/qrcodeimage"
+            android:layout_width="@dimen/dimen_160dp"
+            android:layout_height="@dimen/dimen_160dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qrcodeimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/claimButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:animateLayoutChanges="true"
+                android:padding="@dimen/simpletooltip_arrow_height"
+                android:text="@string/claim"
+                android:textSize="20sp"
+                android:theme="@style/AppTheme.Button"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/invited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/pause_bar_distance"
+                android:animateLayoutChanges="true"
+                android:gravity="center"
+                android:text="@string/invited_x_friends"
+                android:textColor="@color/gray"
+                android:textSize="14sp"/>
+
+
+            <ImageButton
+                android:id="@+id/infoButton"
+                android:layout_width="@dimen/pause_bar_distance"
+                android:layout_height="@dimen/pause_bar_distance"
+                android:layout_marginLeft="@dimen/simpletooltip_overlay_circle_offset"
+                android:animateLayoutChanges="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_info_gray_24dp"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/simpletooltip_margin"
+        android:layout_weight="2"
+        android:background="#F2FBFF">
+
+        <TextView
+            android:id="@+id/inviteExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:gravity="center"
+            android:text="@string/inviteandearn_desc"
+            android:textColor="#656565"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inviteExplain"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+            android:padding="@dimen/simpletooltip_arrow_height"
+            android:text="@string/share_code"
+            android:textSize="16sp"
+            android:theme="@style/AppTheme.Button"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wave_height"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_invite"/>
+
+
+        <TextView
+            android:id="@+id/progresstest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

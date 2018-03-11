@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/menu_user"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/menu_profile"
+            android:checked="false"
+            android:icon="@drawable/ic_person_black_48dp"
+            android:title="@string/my_profile"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/menu_contacts"
+            android:checked="false"
+            android:icon="@drawable/menu_contacts"
+            android:title="@string/my_contacts"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/menu_logout"
+            android:checked="false"
+            android:icon="@drawable/menu_logout"
+            android:title="@string/logout"
+            android:visible="true"/>
+    </group>
+
+    <group
+        android:id="@+id/menu_main"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_listening"
+            android:checked="false"
+            android:icon="@drawable/ic_surround_sound_black_48dp"
+            android:title="@string/listening"/>
+
+        <item
+            android:id="@+id/menu_trending"
+            android:checked="false"
+            android:icon="@drawable/ic_trending_up_white_48dp"
+            android:title="@string/trending_songs"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/menu_trash_folder"
+            android:checked="false"
+            android:icon="@drawable/menu_ignore"
+            android:title="@string/ignore"/>
+
+        <item
+            android:id="@+id/menu_library"
+            android:checked="false"
+            android:icon="@drawable/ic_library_music_black_48dp"
+            android:title="@string/library"/>
+
+        <item
+            android:id="@+id/menu_mp3cutter"
+            android:checked="false"
+            android:icon="@drawable/menu_cutter"
+            android:title="@string/mp3_cutter"/>
+
+
+        <item
+            android:id="@+id/menu_sleeptimer"
+            android:checked="false"
+            android:icon="@drawable/ic_timer_black_48dp"
+            android:title="@string/sleep_timer"/>
+
+
+        <item
+            android:id="@+id/menu_equalizer"
+            android:checked="false"
+            android:icon="@drawable/menu_equalizer"
+            android:title="@string/equalizer"/>
+
+        <item
+            android:id="@+id/menu_subscriptions"
+            android:checked="false"
+            android:icon="@drawable/ic_subscriptions_black_48dp"
+            android:title="@string/subscriptions"/>
+
+        <item
+            android:id="@+id/menu_myhistory"
+            android:checked="false"
+            android:icon="@drawable/menu_history"
+            android:title="@string/my_history"
+            android:visible="true"
+            app:actionViewClass="android.widget.TextView"/>
+
+      <!--  <item
+            android:id="@+id/menu_sharing_wifi"
+            android:checked="false"
+            android:icon="@drawable/ic_wifi_tethering_white_36dp"
+            android:title="Receive a file"
+            android:visible="true"
+            app:actionViewClass="android.widget.TextView"/>-->
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_invite"
+            android:checked="false"
+            android:icon="@drawable/menu_invite"
+            android:title="@string/invite_earn"/>
+
+        <item
+            android:id="@+id/menu_settings"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_black_48dp"
+            android:title="@string/settings"/>
+
+        <item
+            android:id="@+id/menu_rateus"
+            android:checked="false"
+            android:icon="@drawable/ic_star_rate_black_18dp"
+            android:title="@string/rate_us"/>
+
+        <item
+            android:id="@+id/menu_about"
+            android:checked="false"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/about"/>
+    </group>
+</menu>

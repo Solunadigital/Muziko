@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/controlButtonLayout"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="@dimen/slidingLayoutHeight"
+    sothree:umanoScrollableView="@+id/itemList"
+    sothree:umanoShadowHeight="0dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.Base.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/normal_blue"
+                android:theme="@style/ToolbarTheme"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ToolbarPopupTheme"
+                app:titleTextAppearance="@style/toolbarText"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/footer_height"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <include
+        android:id="@+id/mainPlayerLayout"
+        layout="@layout/mini_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ripple"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rv_color="@color/ripple_light_blue"
+    app:rv_framerate="@integer/ripple_framerate"
+    app:rv_rippleDuration="@integer/ripple_duration">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="@dimen/simpletooltip_margin">
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:padding="@dimen/dimen_5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageThumb"
+                android:layout_width="@dimen/pause_bar_distance"
+                android:layout_height="@dimen/pause_bar_distance"
+                android:src="@drawable/profile_placeholder"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/upLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wave_height"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/imageLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layoutMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/simpletooltip_margin"
+                        android:paddingRight="@dimen/simpletooltip_overlay_circle_offset">
+
+                        <TextView
+                            android:id="@+id/textName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/stringValue89"
+                            android:textColor="#313131"
+                            android:textSize="16sp"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/onlineImageView"
+                            android:layout_width="@dimen/dimen_12dp"
+                            android:layout_height="@dimen/dimen_12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/simpletooltip_overlay_circle_offset"
+                            android:src="@color/green"
+                            android:visibility="visible"
+                            app:civ_border_color="@android:color/transparent"
+                            app:civ_border_width="1dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1dp"
+                        android:maxLines="1"
+                        android:text="@string/stringValue90"
+                        android:textColor="#727272"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/simpletooltip_overlay_circle_offset"
+            android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+            android:background="#e6e6e6"/>
+
+        <View
+            android:id="@+id/viewOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/overlay">
+        </View>
+
+    </RelativeLayout>
+
+</com.andexert.library.RippleView>

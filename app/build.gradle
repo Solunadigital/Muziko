@@ -1,0 +1,329 @@
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+apply plugin: 'com.jakewharton.hugo'
+apply plugin: 'com.google.cloud.tools.endpoints-framework-client'
+
+
+android {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion 'android-P'
+    buildToolsVersion '27.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+
+        applicationId "com.muziko"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 171
+        versionName "1.0.71"
+
+        renderscriptTargetApi 27
+        renderscriptSupportModeEnabled true
+        resConfigs "en"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        dexOptions {
+            preDexLibraries true
+            javaMaxHeapSize "16G"
+            maxProcessCount 8
+            dexInProcess true
+        }
+    }
+
+    dependencies {
+        // most often used way, enable notification to notify block event
+        implementation 'com.github.markzhai:blockcanary-android:1.5.0'
+    }
+
+    buildTypes {
+        debug {
+            ext.alwaysUpdateBuildId = false
+            buildConfigField "String", 'acrCloudHost', "\"ap-southeast-1.api.acrcloud.com\""
+            buildConfigField "String", 'acrCloudKey', "\"31d56c31e2cba5d6b3ec5e37aa918aba\""
+            buildConfigField "String", 'acrCloudSecret', "\"1YR50zQ0DS0pbzzOPCGMRm9b75ppZcbJMupuSTeR\""
+            buildConfigField "String", 'TWITTER_KEY', "\"GB8whjy1G0ryw6XazTONl18Fd\""
+            buildConfigField "String", 'TWITTER_SECRET', "\"zIGaPtUTDmbA7mZIVlm32Hh4UZJrflVZWsBHAghbgAcWeo2mzp\""
+            buildConfigField "String", 'GENIUS', "\"LeDsmUlFqf7wyEoTVEv4lM4anRcG0J7KxX8RraHZ2F_mGVd7czkp0XHciF9ivUfD\""
+            buildConfigField "String", 'googlecustomSearchAPI', "\"AIzaSyCiv_yCB2BNJihWItAxHCcdDj2ylwgiSAM\""
+            buildConfigField "String", 'googlecustomSearchCX', "\"018294540985465818514:-9ekt8uawu4\""
+            buildConfigField "String", 'lastFmApiKey', "\"816e4c8cf06875272bb7e34bc7ff01d2\""
+            buildConfigField "String", 'GoogleAPIKey', "\"AIzaSyAr77nfF2wY0_faHpHX0_kZpC864pnbnV8\""
+            buildConfigField "String", 'LICENSE_KEY', "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjl8QKPpkYPEtE9KZclnAqWHUGDzqcrCJW/kJcJWCcSSvNwNgl2IAD+WL4hLMmpAYJJ1A6gcZjIFu/of7rEHUOCsDdDRjyLGyQjnGxP+0nBJiNNE9G1rDMWhSOBPsI7SBnZ6JBelCINygRxfS2rwSzPNOwmOZ1bQ3PXKlbITs6geDQmEUURJh5tLBriv4BdSplMzU23hl3juq7RFoUjHaGPvUN635jQJlO/tQUR3zuCQQCBjxKDWdExbPbe+d37CSPRRB+MDo5CqZ6bA5n9CsslD4L6F+Q8QLyRO9eKmAfmNjVTrJ0Blmxd6cDFn9RH+FsWeb50GFDk3qfiqQH8EGywIDAQAB\""
+            buildConfigField "String", 'DropBoxAppKey', "\"haw3f0vby0xwwal\""
+            buildConfigField "String", 'DropBoxAppSecret', "\"9alu0g2jt7hptpy\""
+            buildConfigField "String", 'BoxAppKey', "\"8p5f8xhv7fetfup17igy2sgj43ft4ixa\""
+            buildConfigField "String", 'BoxAppSecret', "\"Uq76eyKO7iKar7HChG6AGvSozijd9nTY\""
+            buildConfigField "String", 'BoxAppRedirectUrl', "\"https://app.box.com\""
+            buildConfigField "String", 'updaterAPI', "\"https://muziko-48de4.firebaseapp.com\""
+            buildConfigField "String", 'OneDriveAppKey', "\"84a206d4-c36f-4316-b0d8-5f1b73d8b5cf\""
+        }
+        release {
+            buildConfigField "String", 'acrCloudHost', "\"ap-southeast-1.api.acrcloud.com\""
+            buildConfigField "String", 'acrCloudKey', "\"31d56c31e2cba5d6b3ec5e37aa918aba\""
+            buildConfigField "String", 'acrCloudSecret', "\"1YR50zQ0DS0pbzzOPCGMRm9b75ppZcbJMupuSTeR\""
+            buildConfigField "String", 'TWITTER_KEY', "\"GB8whjy1G0ryw6XazTONl18Fd\""
+            buildConfigField "String", 'TWITTER_SECRET', "\"zIGaPtUTDmbA7mZIVlm32Hh4UZJrflVZWsBHAghbgAcWeo2mzp\""
+            buildConfigField "String", 'GENIUS', "\"LeDsmUlFqf7wyEoTVEv4lM4anRcG0J7KxX8RraHZ2F_mGVd7czkp0XHciF9ivUfD\""
+            buildConfigField "String", 'googlecustomSearchAPI', "\"AIzaSyCiv_yCB2BNJihWItAxHCcdDj2ylwgiSAM\""
+            buildConfigField "String", 'googlecustomSearchCX', "\"018294540985465818514:-9ekt8uawu4\""
+            buildConfigField "String", 'lastFmApiKey', "\"816e4c8cf06875272bb7e34bc7ff01d2\""
+            buildConfigField "String", 'GoogleAPIKey', "\"AIzaSyAr77nfF2wY0_faHpHX0_kZpC864pnbnV8\""
+            buildConfigField "String", 'LICENSE_KEY', "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjl8QKPpkYPEtE9KZclnAqWHUGDzqcrCJW/kJcJWCcSSvNwNgl2IAD+WL4hLMmpAYJJ1A6gcZjIFu/of7rEHUOCsDdDRjyLGyQjnGxP+0nBJiNNE9G1rDMWhSOBPsI7SBnZ6JBelCINygRxfS2rwSzPNOwmOZ1bQ3PXKlbITs6geDQmEUURJh5tLBriv4BdSplMzU23hl3juq7RFoUjHaGPvUN635jQJlO/tQUR3zuCQQCBjxKDWdExbPbe+d37CSPRRB+MDo5CqZ6bA5n9CsslD4L6F+Q8QLyRO9eKmAfmNjVTrJ0Blmxd6cDFn9RH+FsWeb50GFDk3qfiqQH8EGywIDAQAB\""
+            buildConfigField "String", 'DropBoxAppKey', "\"haw3f0vby0xwwal\""
+            buildConfigField "String", 'DropBoxAppSecret', "\"9alu0g2jt7hptpy\""
+            buildConfigField "String", 'BoxAppKey', "\"8p5f8xhv7fetfup17igy2sgj43ft4ixa\""
+            buildConfigField "String", 'BoxAppSecret', "\"Uq76eyKO7iKar7HChG6AGvSozijd9nTY\""
+            buildConfigField "String", 'BoxAppRedirectUrl', "\"https://app.box.com\""
+            buildConfigField "String", 'updaterAPI', "\"https://muziko-48de4.firebaseapp.com\""
+            buildConfigField "String", 'OneDriveAppKey', "\"84a206d4-c36f-4316-b0d8-5f1b73d8b5cf\""
+            debuggable false
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    aaptOptions {
+        cruncherEnabled false
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips'
+            universalApk true
+        }
+    }
+
+    // map for the version code
+    project.ext.versionCodes = ['armeabi': 1, 'armeabi-v7a': 2, 'arm64-v8a': 3, 'mips': 5, 'x86': 8, 'x86_64': 9]
+
+    android.applicationVariants.all { variant ->
+        // assign different version code for each output
+        variant.outputs.each { output ->
+            output.versionCodeOverride =
+                    Integer.valueOf(String.valueOf(android.defaultConfig.versionCode) + String.valueOf(project.ext.versionCodes.get(output.getFilter(com.android.build.OutputFile.ABI), 0)))
+        }
+    }
+
+    packagingOptions {
+//        pickFirst 'lib/x86/libswscale.so'
+//        pickFirst 'lib/x86/libavcodec.so'
+//        pickFirst 'lib/mips/libavcodec.so'
+//        pickFirst 'lib/arm64-v8a/libswscale.so'
+//        pickFirst 'lib/arm64-v8a/libavcodec.so'
+//        pickFirst 'lib/arm64-v8a/libffmpeg_mediametadataretriever_jni.so'
+//        pickFirst 'lib/arm64-v8a/libavformat.so'
+//        pickFirst 'lib/arm64-v8a/libavutil.so'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/MANIFEST.MF'
+    }
+}
+
+repositories {
+
+    maven { url "https://jitpack.io" }
+    maven { url 'https://oss.sonatype.org/content/groups/public' }
+    maven {
+        url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo'
+    }
+    maven { url 'https://maven.fabric.io/public' }
+    maven {
+        url 'https://dl.bintray.com/patrickpissurno/ripple-effect/'
+    }
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/releases/'
+    }
+}
+
+ext {
+    supportLibraryVersion = '27.0.1'
+    firebaseVersion = '11.8.0'
+    playServicesVersion = '11.8.0'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':common')
+    implementation project(':onedrivesdk')
+    implementation project(':msaauth')
+    implementation project(':buswear')
+    //    wearApp project(':wear')
+    implementation('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    implementation 'com.android.support:design:28.0.0-alpha1'
+    compile 'com.android.support:support-core-utils:28.0.0-alpha1'
+    //    implementation "'com.android.support:support-v4:28.0.0-alpha1'"
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
+    implementation 'com.android.support:palette-v7:28.0.0-alpha1'
+    implementation 'com.android.support:cardview-v7:28.0.0-alpha1'
+    implementation 'com.android.support:support-v13:28.0.0-alpha1'
+    implementation 'com.android.support:recyclerview-v7:28.0.0-alpha1'
+    //    compile "com.android.support:mediarouter-v7:27.0.1"
+    implementation 'com.android.support:percent:28.0.0-alpha1'
+    //    compile "com.google.android.gms:play-services-cast-framework:$playServicesVersion"
+    implementation "com.google.android.gms:play-services-auth:$playServicesVersion"
+    implementation "com.google.android.gms:play-services-wearable:$playServicesVersion"
+    implementation "com.google.android.gms:play-services-identity:$playServicesVersion"
+    implementation "com.google.android.gms:play-services-gcm:$playServicesVersion"
+    implementation "com.google.firebase:firebase-core:$firebaseVersion"
+    implementation "com.google.firebase:firebase-database:$firebaseVersion"
+    implementation "com.google.firebase:firebase-storage:$firebaseVersion"
+    implementation "com.google.firebase:firebase-auth:$firebaseVersion"
+    implementation "com.google.firebase:firebase-ads:$firebaseVersion"
+    implementation "com.google.firebase:firebase-messaging:$firebaseVersion"
+    implementation 'com.firebaseui:firebase-ui-auth:3.1.0'
+    implementation('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true
+    }
+    implementation files('src/main/jniLibs/acrcloud-android-sdk-1.5.6.1.jar')
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation files('libs/amazonclouddrive-1.0.0.jar')
+    implementation files('libs/login-with-amazon-sdk.jar')
+    implementation 'com.google.http-client:google-http-client-android:1.23.0' exclude module: 'httpclient'
+    implementation 'com.google.api-client:google-api-client-android:1.23.0' exclude module: 'httpclient'
+    implementation 'com.google.api-client:google-api-client-gson:1.23.0' exclude module: 'httpclient'
+    /*   implementation 'com.github.yongjhih.android-proguards:androidannotations-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:calligraphy-2.1.0-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:crashlytics-2-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:eventbus-2-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:fabric-twitter-kit-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:facebook-fresco-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:glide-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:google-play-services-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:gson-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:jackson-2-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:logansquare-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:okhttp3-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:okhttp-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:okio-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:picasso-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:realm-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:retrofit2-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:retrofit-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:retrolambda-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:rxjava-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:sqlite-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:support-design-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:support-v7-appcompat-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:support-v7-cardview-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:google-gms-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:webkit-pro:-SNAPSHOT'
+           implementation 'com.github.yongjhih.android-proguards:apache-http-legacy-pro:-SNAPSHOT'*/
+    endpointsServer project(path: ':cloud', configuration: 'endpoints')
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation 'com.uphyca:stetho_realm:2.1.0'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.5.1'
+    implementation 'com.nightonke:jellytogglebutton:1.0.2'
+    implementation 'com.kyleduo.switchbutton:library:1.4.6'
+    implementation 'com.sothree.slidinguppanel:library:3.3.1'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.github.TR4Android:AppCompat-Extension-Library:v0.4.0'
+    implementation 'com.github.techery:properratingbar:0.0.5'
+    implementation 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.4'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.4.4'
+    implementation 'com.h6ah4i.android.materialshadowninepatch:materialshadowninepatch:0.6.5'
+    implementation 'com.flipboard:bottomsheet-core:1.5.3'
+    implementation 'com.flipboard:bottomsheet-commons:1.5.3'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.eralpyucel:CircleProgressView:v1.1'
+    implementation 'com.evernote:android-job:1.2.4'
+    implementation 'com.arasthel:asyncjob-library:1.0.3'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    //    implementation 'com.takisoft.fix:preference-v7:26.1.0.2'
+    implementation 'commons-io:commons-io:2.5'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'com.github.pwittchen:reactivenetwork-rx2:0.9.1'
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.0'
+    implementation 'com.jaredrummler:android-device-names:1.1.5'
+    implementation 'com.github.apl-devs:appintro:v4.2.2'
+    implementation 'br.com.zbra:android-linq:1.0.1'
+    implementation 'io.michaelrocks:libphonenumber-android:7.7.3'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:7.7.2'
+    implementation 'com.bluelinelabs:logansquare:1.3.7'
+    implementation 'org.jsoup:jsoup:1.10.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.jakewharton.retrofit:retrofit1-okhttp3-client:1.1.0'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+    implementation 'com.patrickpissurno:ripple-effect:1.3.1'
+    implementation 'com.nightonke:boommenu:2.0.7'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.0.1'
+    implementation 'com.badoo.mobile:android-weak-handler:1.1'
+    implementation 'com.github.medyo:android-about-page:1.2'
+    implementation 'com.cleveroad:fan-layout-manager:1.0.4'
+    implementation 'com.facebook.fresco:fresco:1.3.0'
+    implementation 'com.github.florent37:expectanim:1.0.3'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.9.1'
+    implementation 'com.google.android.support:wearable:2.1.0'
+    implementation 'com.google.android.wearable:wearable:2.1.0'
+    implementation 'com.box:box-android-sdk:4.0.8'
+    implementation 'com.dropbox.core:dropbox-core-sdk:3.0.3'
+    implementation 'com.devbrackets.android:exomedia:4.0.3'
+    implementation 'com.google.apis:google-api-services-drive:v2-rev260-1.22.0'
+    implementation 'com.microsoft.aad:adal:1.1.+'
+    implementation 'com.github.simonpercic:aircycle:1.2.0'
+    implementation 'com.akexorcist:localizationactivity:1.1.2'
+    implementation 'com.yayandroid:TheActivityManager:1.0.6'
+    implementation 'com.king.thread:nevercrash:1.0.0'
+    implementation 'com.oasisfeng.condom:library:1.2.0'
+    implementation 'com.infstory:proguard-snippets:1.0.0'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    implementation 'io.gresse.hugo.vumeterlibrary:vumeterlibrary:1.0.15'
+    implementation 'com.muddzdev:styleabletoast:1.0.9'
+    implementation 'com.github.shiraji:butai-java:1.0.2'
+    implementation 'org.aviran.cookiebar2:cookiebar2:1.0.5'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    annotationProcessor 'com.github.simonpercic:aircycle-compiler:1.2.0'
+    annotationProcessor 'com.bluelinelabs:logansquare-compiler:1.3.7'
+}
+
+configurations {
+    compile.exclude group: "org.apache.httpcomponents,com.android.support", module: "httpclient"
+}
+
+
+apply plugin: 'com.google.gms.google-services'

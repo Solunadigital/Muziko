@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen_74dp"
+    android:clickable="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.muziko.activities.TrendingActivity"
+    tools:showIn="@layout/activity_trending">
+
+    <RelativeLayout
+        android:id="@+id/admobLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/admob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"/>
+    </RelativeLayout>
+
+
+    <com.muziko.controls.FastScroller.FastScrollRecyclerView
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/admobLayout"
+        app:fastScrollAutoHide="true"
+        app:fastScrollAutoHideDelay="1000"
+        app:fastScrollPopupBgColor="@color/normal_blue"
+        app:fastScrollPopupTextColor="@android:color/white"
+        app:fastScrollThumbColor="@color/normal_blue"
+        app:fastScrollTrackColor="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ActivityIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/lyrics_icon_blue"/>
+
+        <TextView
+            android:id="@+id/explainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ActivityIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_width"
+            android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+            android:gravity="center"
+            android:text="@string/no_songs_in_chart"
+            android:textColor="@color/emptytextcolor"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_100dp"
+            android:layout_centerInParent="true"
+            android:elevation="4dp"
+            android:visibility="visible"
+            app:mlpb_enable_circle_background="false"
+            app:mlpb_progress_color="@color/normal_blue"
+            app:mlpb_progress_stoke_width="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

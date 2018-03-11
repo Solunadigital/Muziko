@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/dimen_20dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/play_from"
+        android:textColor="#505659"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+        android:gravity="center_horizontal"
+        android:text="@string/desired_start_time"
+        android:textColor="#858585"
+        android:textSize="16sp"/>
+
+
+    <com.muziko.controls.RangeBar.RangeBar
+        android:id="@+id/rangebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80dp"
+        android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+        android:layout_marginLeft="@dimen/simpletooltip_overlay_circle_offset"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        custom:connectingLineColor="@color/light_blue"
+        custom:pinColor="@color/light_blue"
+        custom:pinMaxFont="10sp"
+        custom:pinRadius="20dp"
+        custom:rangeBarColor="@color/new_gray_bg"
+        custom:selectorColor="@color/light_blue"
+        custom:selectorSize="8dp"
+        custom:temporaryPins="false"
+        custom:tickColor="@color/transparent"
+        custom:tickEnd="10"
+        custom:tickHeight="0dp"
+        custom:tickInterval="1"
+        custom:tickStart="0"/>
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simpletooltip_overlay_circle_offset">
+
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/preview_circle_button"
+            android:padding="@dimen/simpletooltip_overlay_circle_offset"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_pause_white_48dp"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/preview_circle_button"
+            android:padding="@dimen/simpletooltip_overlay_circle_offset"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_play_arrow_white_48dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

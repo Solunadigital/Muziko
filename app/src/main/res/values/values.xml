@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="lrcLines">10</integer>
+    <item name="drives" type="id"/>
+    <item name="root" type="id"/>
+</resources>

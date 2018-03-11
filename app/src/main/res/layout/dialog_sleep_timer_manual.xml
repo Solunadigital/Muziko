@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/dimen_250dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sleep_timer_caps"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_horizontal"
+            android:hint="hh:mm"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="none"
+            android:lines="1"
+            android:longClickable="false"
+            android:maxLength="5"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="30sp"/>
+    </FrameLayout>
+
+
+    <CheckBox
+        android:id="@+id/playlastsong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+        android:text="@string/play_last_song_to_end"
+        android:theme="@style/LightCheckBoxStyle"/>
+
+    <RelativeLayout
+        android:id="@+id/createNewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/simpletooltip_arrow_height"
+            android:text="@string/start_wifi_direct"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            style="@style/sleepRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue65"/>
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue102"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue66"/>
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue103"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue67"/>
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue104"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            style="@style/sleepRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue68"/>
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue105"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue69"/>
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue106"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue70"/>
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue107"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            style="@style/sleepRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue71"/>
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue108"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue72"/>
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue109"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue110"/>
+
+
+                <TextView
+                    style="@style/sleepText"
+                    android:text="@string/stringValue111"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            style="@style/sleepRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/stringValue112"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/sleepDigit"
+                    android:text="@string/stringValue62"/>
+
+                <TextView
+                    style="@style/sleepText"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cancel_black_24dp"/>
+
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="manage_artwork">
+        <item>เลือกอัตโนมัติ</item>
+        <item>เลือกจากอินเทอร์เน็ต</item>
+        <item>เลือกจากแกลเลอรี</item>
+        <item>เลือกจากโฟลเดอร์อัลบั้ม</item>
+        <item>เลือกจากแท็ก ID3</item>
+        <item>แก้ไข</item>
+        <item>"ลบรูปภาพ
+"</item>
+    </string-array>
+    <string-array name="shake_threshold">
+        <item>ไม่สำคัญ</item>
+        <item>อ่อนไหว</item>
+        <item>อ่อนไหวมาก</item>
+    </string-array>
+    <string-array name="phone_action">
+        <item>@ string / none</item>
+        <item>@ สตริง / เล่น</item>
+        <item>@ สตริง / หยุดชั่วคราว</item>
+    </string-array>
+</resources>

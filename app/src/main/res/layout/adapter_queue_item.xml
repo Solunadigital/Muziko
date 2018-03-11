@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/simpletooltip_margin">
+
+
+        <View
+            android:id="@+id/viewOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/overlay"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/playingOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/queue_playing_overlay"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:id="@+id/iconLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp">
+
+            <ImageView
+                android:id="@+id/imageGrabber"
+                android:layout_width="@dimen/pause_bar_distance"
+                android:layout_height="@dimen/pause_bar_distance"
+                android:layout_gravity="center_vertical|left"
+                android:padding="@dimen/dimen_5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_drag_handle_black_48dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/upLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/iconLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/dummy_track"
+                        android:textColor="#313131"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <TextView
+                        android:id="@+id/removeAfter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:text="@string/stringValue65"
+                        android:textColor="#727272"
+                        android:textSize="20sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/textDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1dp"
+                        android:maxLines="1"
+                        android:text="@string/stringValue73"
+                        android:textColor="#727272"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:id="@+id/imageMenu"
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_more_vert_black_48dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/offlineOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/light_gray"
+            android:visibility="gone">
+        </View>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSwipe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height"
+        android:animateLayoutChanges="true"
+        android:background="@color/normal_blue"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/txt_removed"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_width"
+            android:layout_weight="2"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/removed"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_undo"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/undo"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.muziko.activities.StorageAddAccountActivity"
+    tools:showIn="@layout/activity_storage_add_account">
+
+    <ListView
+        android:id="@+id/listViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/simpletooltip_margin"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/driveLayout"
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:background="@color/normal_blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                    android:src="@drawable/drive"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/google_drive"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dropboxLayout"
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:background="@color/normal_blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                    android:src="@drawable/dropbox"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/dropbox"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/simpletooltip_margin"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/boxLayout"
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:background="@color/normal_blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                    android:src="@drawable/box"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/box"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oneDriveLayout"
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:background="@color/normal_blue"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                    android:src="@drawable/onedrive"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/onedrive"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/simpletooltip_margin"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/amazonLayout"
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:background="@color/normal_blue"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                    android:src="@drawable/amazon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/amazon"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/simpletooltip_margin"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

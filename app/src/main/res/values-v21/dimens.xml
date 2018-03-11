@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="small_notification">96dp</dimen>
+    <dimen name="small_notification_controls">40dp</dimen>
+</resources>

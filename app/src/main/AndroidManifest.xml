@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.muziko">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission-sdk-23 android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <permission
+        android:name="com.example.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme.Base"
+        android:vmSafeMode="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".activities.splash.LoaderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoaderTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.splash.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"/>
+        <activity
+            android:name=".activities.splash.IntroActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.RecentActivity"
+            android:label="@string/title_activity_recent"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.PlayerListActivity"
+            android:label="@string/title_activity_player_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.FavouritesActivity"
+            android:label="@string/title_activity_favourites"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.StorageActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.IgnoreActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.LibraryActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.PlaylistActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.PlaylistSongsActivity"
+            android:parentActivityName=".activities.PlaylistActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.PlaylistActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.MP3CutterActivity"
+            android:label="@string/title_activity_mp3_cutter"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.EqualizerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.SleepActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.register.RegisterActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.SignInActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.InviteActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.SubscriptionActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubscriptionTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.SubscriptionUpgradeActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubscriptionUpgradeTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.HistoryActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.ContactsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.ShareWifiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.LastFMSettingsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.SettingsActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.LastFMStatusActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.LastFMSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.LastFMSettingsActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.TagsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.MultiTagActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.SearchSongsActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.AlbumArtID3Activity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.AlbumArtFolderActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.AlbumArtInternetActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.NowPlayingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="content"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="file"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="http"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/itunes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="vnd.android.cursor.dir/playlist"/>
+                <data android:mimeType="vnd.android.cursor.dir/albums"/>
+                <data android:mimeType="vnd.android.cursor.dir/artists"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.andrew.apollo.AUDIO_PLAYER"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+
+                <data android:mimeType="vnd.android.cursor.dir/audio"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.TrendingActivity"
+            android:label="@string/title_activity_most_played"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity android:name=".activities.YouTubePlayerActivity">
+        </activity>
+        <activity
+            android:name=".activities.StorageAddAccountActivity"
+            android:parentActivityName=".activities.StorageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Base">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.StorageActivity"/>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AlbumArtEditTheme"/>
+        <activity
+            android:name=".dialogs.RatingDialog"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"/>
+        <activity
+            android:name=".cutter.ringtone_lib.RingdroidEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.AboutActivity">
+        </activity>
+        <activity
+            android:name=".activities.IdentifySongActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.muziko.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.amazon.identity.auth.device.authorization.AuthorizationActivity"
+            android:allowTaskReparenting="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="com.muziko"
+                    android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.SongService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name=".service.MuzikoFingerprintService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name=".service.MuzikoFirebaseService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name=".service.LyricsDownloaderService"
+            android:enabled="true"
+            android:exported="true"/>
+        <!-- <service -->
+        <!-- android:name=".service.ShakerService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"/> -->
+        <service
+            android:name=".api$LastFM.services.ScrobblingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.muziko.service.playstatechanged"/>
+                <action android:name="com.muziko.service.authenticate"/>
+                <action android:name="com.muziko.service.clearcreds"/>
+                <action android:name="com.muziko.servicee.justscrobble"/>
+                <action android:name="com.muziko.service.heart"/>
+                <action android:name="com.muziko.service.copy"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".widgets.StandardWidget"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_standard"/>
+        </receiver>
+        <receiver
+            android:name=".widgets.QueueWidget"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_queue"/>
+        </receiver>
+
+        <service
+            android:name=".widgets.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:name=".service.MuzikoFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.MuzikoFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- <receiver -->
+        <!-- android:name=".receivers.BootReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:permission="android.permission.RECEIVE_BOOT_COMPLETED"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED"/> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <receiver
+            android:name=".receivers.MediaUnmountedReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.MediaMountedReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <!--<receiver android:name="receivers.NotificationBroadcast"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.muziko.audioplayer.delete"/>
+                <action android:name="com.muziko.audioplayer.pause"/>
+                <action android:name="com.muziko.audioplayer.next"/>
+                <action android:name="com.muziko.audioplayer.play"/>
+                <action android:name="com.muziko.audioplayer.playwidget"/>
+                <action android:name="com.muziko.audioplayer.previous"/>
+                <action android:name="com.muziko.audioplayer.repeat"/>
+                <action android:name="com.muziko.audioplayer.shuffle"/>
+                <action android:name="com.muziko.audioplayer.playsong"/>
+                <action android:name="com.muziko.audioplayer.playqueuesong"/>
+                <action android:name="com.muziko.audioplayer.equalizer.off"/>
+                <action android:name="com.muziko.audioplayer.equalizer.on"/>
+                <action android:name="com.muziko.audioplayer.equalizer.update"/>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>-->
+        <receiver
+            android:name=".receivers.InstallReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.MuzikoAlarmReceiver"
+            android:exported="true">
+        </receiver>
+        <receiver
+            android:name=".receivers.MuzikoUpdateReceiver"
+            android:exported="true">
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="378df8e3c078d40f29447fee608fc0bd4daab7c4"/>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity
+            android:name="com.dropbox.core.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask">
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-haw3f0vby0xwwal"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" -->
+        <!-- android:value="com.muziko.cast.CastOptionsProvider"/> -->
+
+    </application>
+
+</manifest>

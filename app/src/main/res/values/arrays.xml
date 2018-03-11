@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="manage_artwork">
+        <item>Auto Pick</item>
+        <item>Pick from Internet</item>
+        <item>Pick From Gallery</item>
+        <item>Pick from album folder</item>
+        <item>Pick from ID3 tags</item>
+        <item>Edit</item>
+        <item>Remove Art</item>
+    </string-array>
+
+    <string-array name="shake_threshold">
+        <item>Not sensitive</item>
+        <item>Sensitive</item>
+        <item>Very sensitive</item>
+    </string-array>
+
+    <string-array name="phone_action">
+        <item>@string/none</item>
+        <item>@string/play</item>
+        <item>@string/pause</item>
+    </string-array>
+
+    <array name="visualizer_colors">
+        <item>@color/visualizer_one</item>
+        <item>@color/visualizer_two</item>
+        <item>@color/visualizer_three</item>
+        <item>@color/visualizer_four</item>
+    </array>
+
+    <string-array name="sync_location">
+        <item>@string/internal_storage</item>
+        <item>@string/sd_card</item>
+    </string-array>
+
+    <string-array name="WheelArrayDefault">
+        <item>AigeStudio</item>
+        <item>Aige</item>
+        <item>爱哥</item>
+        <item>الحب  اخي</item>
+        <item>jeg elsker</item>
+        <item>사랑해요 형</item>
+        <item>Amor de irmão</item>
+        <item>armastan</item>
+        <item>愛の兄</item>
+        <item>обичам те</item>
+        <item>любовь - братa</item>
+        <item>miłość bracie</item>
+        <item>Liebe</item>
+        <item>Lamour</item>
+        <item>rakastan sinua</item>
+        <item>láska..</item>
+        <item>dragostea.</item>
+        <item>jag älskar</item>
+        <item>ljubezen, brat.</item>
+        <item>愛哥</item>
+        <item>ชอบพี่</item>
+        <item>αγάπη μου</item>
+        <item>a szerelem.</item>
+        <item>Amore, fratello.</item>
+    </string-array>
+    <string-array name="WheelArrayWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>

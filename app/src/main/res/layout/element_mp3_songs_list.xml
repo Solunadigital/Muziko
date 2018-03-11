@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/simpletooltip_margin">
+
+    <RelativeLayout
+        android:id="@+id/upLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        >
+
+        <ImageView
+            android:id="@+id/songIcon"
+            android:layout_width="@dimen/wave_height"
+            android:layout_height="@dimen/wave_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/song_test"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/songIcon"
+            >
+
+            <TextView
+                android:id="@+id/songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/dummy_track"
+                android:textColor="#313131"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/artistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/songName"
+                android:layout_marginTop="@dimen/dimen_1dp"
+                android:maxLines="1"
+                android:text="@string/dummy_artist"
+                android:textColor="#727272"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/songIcon"
+            android:background="#e6e6e6"
+            />
+
+        <ImageView
+            android:id="@+id/blueIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/triangle_blue_top"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

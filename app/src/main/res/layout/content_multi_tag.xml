@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/miniplayerHeight"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.muziko.activities.MultiTagActivity"
+    tools:showIn="@layout/activity_multi_tag">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <EditText
+                        android:id="@+id/editArtist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_tag_artist"
+                        android:hint="Artist"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <EditText
+                        android:id="@+id/editAlbum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_tag_album"
+                        android:hint="Album"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="18sp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_tag_genre"
+                        android:hint="Genre"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <EditText
+                        android:id="@+id/editYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_tag_calendar"
+                        android:hint="Year"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

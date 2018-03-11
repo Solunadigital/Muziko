@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="START">เริ่ม</string>
+
+    <string name="STOP">หยุด</string>
+
+    <string name="about">เกี่ยวกับ</string>
+    <string name="about_page_desc"><![CDATA[เครื่องเสียงและเพลง, ควอไลเซอร์ 5 แบนด์, โปรแกรมตัดต่อ id3 tag, เครื่องตัด MP3 และริงโทน]]></string>
+    <string name="about_title">เกี่ยวกับ Muziko</string>
+
+    <string name="add_account">เพิ่มบัญชี</string>
+    <string name="add_contact">เพิ่มผู้ติดต่อ</string>
+    <string name="add_favorite">เพิ่มรายการโปรด</string>
+    <string name="add_playlist">เพิ่มเพลย์ลิสต์</string>
+    <string name="add_to_fav">เพิ่มในรายการโปรด</string>
+    <string name="add_to_playlist">เพิ่มลงในเพลย์ลิสต์</string>
+    <string name="add_to_queue">เพิ่มในคิว</string>
+
+    <string name="admobInterstitial">ca-app-pub-6491023872523776/8390442927</string>
+
+    <string name="advanced_options_net_3gup_name">3G และ Wifi</string>
+    <string name="advanced_options_net_any_name">เครือข่ายใดก็ได้</string>
+    <string name="advanced_options_net_wifi_name">Wifi เท่านั้น</string>
+    <string name="advanced_options_type_battery_name">รักษาแบตเตอรี่</string>
+    <string name="advanced_options_type_custom_name">กำหนดเอง</string>
+    <string name="advanced_options_type_same_as_battery_name">เช่นเดียวกับแบตเตอรี่</string>
+    <string name="advanced_options_type_standard_name">มาตรฐาน</string>
+    <string name="advanced_options_when_10_name">หลังจากสิบแทร็ค</string>
+    <string name="advanced_options_when_1_name">หลังจากติดตามทุกเพลง</string>
+    <string name="advanced_options_when_25_name">หลังจาก 25 แทร็ก</string>
+    <string name="advanced_options_when_5_name">หลังจากห้าแทร็ก</string>
+    <string name="advanced_options_when_never_name">เมื่อคุณกดปุ่ม scrobble ตอนนี้</string>
+    <string name="advanced_search">การค้นหาขั้นสูง</string>
+
+    <string name="album">อัลบั้ม</string>
+    <string name="album_art_cleared">ปกอัลบั้มถูกล้างแล้ว</string>
+    <string name="album_art_updated">อัลบั้มอัลบั้มได้รับการอัปเดตแล้ว</string>
+    <string name="album_name">ชื่ออัลบั้ม</string>
+    <string name="album_not_found">ไม่พบอัลบั้ม!</string>
+
+    <string name="albums">อัลบั้ม</string>
+
+    <string name="alert_ok_button">ตกลง</string>
+    <string name="alert_title_failure">ข้อผิดพลาด</string>
+    <string name="alert_title_success">ความสำเร็จ</string>
+
+    <string name="all">ทั้งหมด</string>
+
+    <string name="app_name">Muziko</string>
+
+    <string name="artist">ศิลปิน</string>
+    <string name="artist_name">Muziko-Ringtone</string>
+
+    <string name="artists">ศิลปิน</string>
+
+    <string name="au_clip">Muziko_shared_auclip</string>
+
+    <string name="auth_bad_auth">ชื่อผู้ใช้ / รหัสผ่านไม่ถูกต้อง</string>
+    <string name="auth_client_banned">แอปเวอร์ชันนี้เลิกใช้แล้วโปรดอัปเกรด</string>
+    <string name="auth_internal_error">ข้อผิดพลาดภายใน</string>
+    <string name="auth_just_error">เกิดข้อผิดพลาดลองใหม่ ...</string>
+    <string name="auth_network_error_retrying">เกิดข้อผิดพลาดเกี่ยวกับเครือข่ายลองใหม่ ...</string>
+    <string name="auth_network_unfit">ไม่สามารถส่งข้อมูลบนเครือข่ายเปลี่ยนหน้าจอตัวเลือกได้</string>
+    <string name="auth_server_error">ข้อผิดพลาดของเซิร์ฟเวอร์ %1 ลองใหม่ ...</string>
+    <string name="auth_timing_error">ข้อผิดพลาดด้านเวลาฝั่งไคลเอ็นต์กำลังลองใหม่ ...</string>
+    <string name="auth_updating">กำลังตรวจสอบสิทธิ์ ...</string>
+
+    <string name="bad_extension_error">ขออภัย Muziko ยังไม่สามารถแก้ไขไฟล์ประเภทได้</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-6491023872523776/3782654126</string>
+
+    <string name="bass">เบส</string>
+
+    <string name="block">ปิดกั้น</string>
+    <string name="block_contacts">ปิดกั้นที่อยู่ติดต่อ</string>
+
+    <string name="box">กล่อง</string>
+
+    <string name="buy_now">ซื้อตอนนี้</string>
+
+    <string name="by">โดย</string>
+
+    <string name="cancel">ยกเลิก</string>
+    <string name="cancel_caps">ยกเลิก</string>
+
+    <string name="choose_contact">เลือกผู้ติดต่อ</string>
+
+    <string name="claim">อ้างสิทธิ์</string>
+
+    <string name="clear_cache">ล้างแคช</string>
+
+    <string name="client_id">clident_id</string>
+    <string name="client_ver">client_ver</string>
+
+    <string name="close">ปิด</string>
+
+    <string name="confirm_block_contacts">คุณต้องการปิดกั้นรายชื่อติดต่อเหล่านี้หรือไม่?</string>
+    <string name="confirm_clear_all_creds">คุณแน่ใจหรือไม่ว่าต้องการล้างข้อมูลรับรองผู้ใช้สำหรับบัญชีที่ลงชื่อเข้าใช้ทั้งหมด? การดำเนินการนี้จะลบแอดแบคที่ไม่ได้รับการยอมรับออกด้วย</string>
+    <string name="confirm_delete_all_sc">คุณแน่ใจหรือไม่ว่าต้องการล้างแทร็กทั้งหมดในแคชสำหรับ %1? การดำเนินการนี้ไม่สามารถยกเลิกได้</string>
+    <string name="confirm_delete_all_sc_from_all">คุณแน่ใจหรือไม่ว่าต้องการล้างแทร็กทั้งหมดในแคช การดำเนินการนี้ไม่สามารถยกเลิกได้</string>
+    <string name="confirm_delete_sc">คุณแน่ใจหรือไม่ว่าคุณไม่ต้องการ scrobble track นี้ไป %1? การดำเนินการนี้ไม่สามารถยกเลิกได้</string>
+    <string name="confirm_delete_sc_from_all">คุณแน่ใจหรือไม่ว่าคุณต้องการ scrobble track นี้? การดำเนินการนี้ไม่สามารถยกเลิกได้</string>
+
+    <string name="connection_error">ข้อผิดพลาดในการเชื่อมต่อในการเรียกเนื้อเพลง</string>
+
+    <string name="contacts">ที่อยู่ติดต่อ</string>
+
+    <string name="coverart_dl_progress">กำลังดาวน์โหลดปก ... %1$d/%2$d - กวาดเพื่อยกเลิก</string>
+
+    <string name="create">สร้าง</string>
+    <string name="create_playlist">สร้างเพลย์ลิสต์</string>
+
+    <string name="creds_required">ข้อมูลประจำตัวจำเป็นต้องทำงานอย่างถูกต้อง</string>
+
+    <string name="cut">ตัด</string>
+    <string name="cut_tones">ตัดเพลงริงโทน</string>
+
+    <string name="cutter">เครื่องตัด MP3</string>
+    <string name="cutter_desc">ตัดส่วนที่ดีที่สุดของเพลง MP3 ของคุณและใช้เป็นริงโทนของคุณ</string>
+
+    <string name="date_added">เพิ่มวันที่</string>
+
+    <string name="delete">ลบ</string>
+    <string name="delete_from_playlist">ลบจากเพลย์ลิสต์</string>
+    <string name="delete_from_queue">ลบเพลงต่อไป</string>
+    <string name="delete_song">ลบเพลง</string>
+    <string name="delete_song_confirm">คุณแน่ใจที่จะลบเพลง?</string>
+    <string name="delete_songs">ลบเพลง</string>
+    <string name="delete_tmp_error">"เกิดข้อผิดพลาดในการลบไฟล์ชั่วคราว"</string>
+
+    <string name="desired_start_time">คุณอยากจะเริ่มเพลงตอนไหน</string>
+
+    <string name="details">รายละเอียด</string>
+
+    <string name="disabled">"ปิดการใช้งานแล้ว"</string>
+
+    <string name="do_nothing">ไม่ทำ</string>
+
+    <string name="done">เสร็จสิ้น</string>
+
+    <string name="download_cloud_track">"ดาวน์โหลด "</string>
+
+    <string name="drives">ไดรฟ์</string>
+
+    <string name="dropbox">DropBox</string>
+
+    <string name="dummy_artist">Arijit Singh</string>
+    <string name="dummy_artist2">Judith ma</string>
+    <string name="dummy_email">info@gmail.com</string>
+    <string name="dummy_track">จนถึงจุดสิ้นสุดของโลก</string>
+    <string name="dummy_track2">อย่าร้องไห้เพราะ....</string>
+
+    <string name="duration">ระยะเวลา</string>
+    <string name="duration_title">ระยะเวลา:</string>
+
+    <string name="end_marker">เครื่องหมายท้าย</string>
+    <string name="end_time">เวลาสิ้นสุด</string>
+
+    <string name="enter_cloud_account_name">โปรดป้อนชื่อบัญชี Cloud ใหม่</string>
+    <string name="enter_name_playlist">"ใส่ชื่อเพลงลิสต์ "</string>
+
+    <string name="equalizer">Equalizer</string>
+    <string name="equalizer_desc">ตัวควอไลเซอร์ 5 แบนด์ที่ทรงพลังพร้อมตั้งค่าล่วงหน้าจำนวนมาก</string>
+
+    <string name="err_auth_accpick">"ไม่มีบัญชีที่เลือก "</string>
+    <string name="err_auth_dono">GOOGLE DRIVE ที่ไม่ได้รับการรับรองเข้าไม่ถึง!</string>
+    <string name="err_auth_nogo">ACCESS ไม่ได้รับอนุญาต!</string>
+    <string name="err_auth_sha">"ตรวจสอบ PackageName/SHA1-โดคอนโซนนักพัฒนาซอฟต์แวร์ "</string>
+
+    <string name="error_server_prompt">ตกลงเพื่อส่งข้อมูลที่ไม่ระบุชื่อเกี่ยวกับข้อผิดพลาดนี้ไปที่ Muziko.com ดังนั้น</string>
+
+    <string name="exit_application">ออกจากแอพพลิเคชัน</string>
+
+    <string name="file_name">ชื่อไฟล์</string>
+    <string name="file_save_title">บันทึกเป็น:</string>
+
+    <string name="filter_list">ตัวกรองรายการ</string>
+    <string name="filter_storage">เก็บข้อมูลตัวกรอง</string>
+
+    <string name="four">สี่</string>
+
+    <string name="genres">"ประเภท "</string>
+
+    <string name="get_your_device_closer_to_the_sound_and_try_again">"ทำให้อุปกรณ์ของคุณใกล้ชิดกับเสียงและลองอีกครั้ง "</string>
+
+    <string name="go_to">ไปที่</string>
+    <string name="go_to_album">"ไปที่อัลบั้ม "</string>
+    <string name="go_to_artist">"ไปที่ศิลปิน "</string>
+
+    <string name="google_drive">Google ไดร์ฟ</string>
+
+    <string name="gotit">ได้รับมัน</string>
+
+    <string name="grant_sd_perm">คุณต้องการให้สิทธิ์การ์ด SD เพื่อให้แทรอกสามารถลบได้หรือไม่?</string>
+
+    <string name="grid_size">ขนาดตาราง</string>
+
+    <string name="hide_songs">ซ่อนเพลง</string>
+
+    <string name="hine_songs_less">ซ่อนเพลงน้อยกว่า x นาที</string>
+
+    <string name="ignore">ละเว้น</string>
+
+    <string name="install_file_manager">โปรดติดตั้ง File Manager</string>
+
+    <string name="internal_storage">พื้นที่เก็บข้อมูลภายใน</string>
+
+    <string name="invite_earn">เชิญ</string>
+
+    <string name="inviteandearn">เชิญและรับ</string>
+    <string name="inviteandearn_desc">เชิญเพื่อน 50 คนเข้าร่วม Muziko และกำจัดโฆษณา</string>
+
+    <string name="invited_x_friends">"คุณเชิญเพื่อน 0 คนแล้ว "</string>
+
+    <string name="john_doe">John Doe</string>
+
+    <string name="later">ที่หลัง</string>
+
+    <string name="latest_version">รุ่นล่าสุด</string>
+
+    <string name="licenses">ใบอนุญาต</string>
+
+    <string name="limited_network">เครือข่าย จำกัด</string>
+
+    <string name="link_mobile">เชื่อมโยงมือถือ</string>
+    <string name="link_mobile_caps">LINK MOBILE PHONE</string>
+    <string name="link_phone">เชื่อมโยงหมายเลขโทรศัพท์ของคุณเพื่อให้เพื่อนของคุณค้นหาคุณได้ง่ายขึ้น</string>
+
+    <string name="listen_to_10_seconds_song">ฟังเพลง 10 วินาที</string>
+
+    <string name="listening">การฟัง</string>
+    <string name="listening_for_friends">กำลังฟังเพื่อน ...</string>
+
+    <string name="local">ท้องถิ่น</string>
+
+    <string name="logged_in_as">เข้าสู่ระบบโดย:%1</string>
+    <string name="logged_in_just">เข้าสู่ระบบด้วยชื่อ:</string>
+
+    <string name="logout">ออกจากระบบ</string>
+
+    <string name="loudness">ความดัง</string>
+
+    <string name="loved_track">ติดตามความรัก</string>
+
+    <plurals name="lyrics_dl_finished_desc">
+        <item quantity="other">ดาวน์โหลดเนื้อเพลงสำหรับ %1$d เพลง</item>
+    </plurals>
+    <string name="lyrics_dl_progress">กำลังดาวน์โหลดเนื้อเพลง ... %1$d/%2$d - กวาดเพื่อยกเลิก</string>
+    <string name="lyrics_synced">เนื้อเพลงจะซิงโครไนซ์ หากคุณแก้ไขข้อมูลให้ตรงกันจะหายไป</string>
+
+    <string name="make_default_ringtone">สร้างริงโทนเริ่มต้น</string>
+
+    <string name="manage_artwork">จัดการงานศิลปะ</string>
+
+    <string name="merge">ผสาน</string>
+
+    <string name="most">ส่วนใหญ่</string>
+
+    <string name="move_to_ignore">ย้ายไปที่ละเว้นโฟลเดอร์</string>
+
+    <string name="mp3_cutter">เครื่องตัด MP3</string>
+
+    <string name="multi_tagedit_error">"คุณต้องเลือกอย่างน้อยหนึ่งแทร็กจากที่เก็บข้อมูลภายใน"</string>
+    <string name="multi_tagedit_warning">"เนื่องจากมีการเปลี่ยนแปลง Android 4.4 ขึ้นไป (KitKat) การแก้ไขแท็กแทร็กที่เก็บไว้ใน SD-card อาจไม่ทำงาน แทร็กการ์ด SD ถูกแยกออกแล้ว"</string>
+
+    <string name="muziko_requires_write_perm">Muziko ต้องการสิทธิ์การตั้งค่าการเขียนเพื่อตั้งค่าเสียงเรียกเข้าเริ่มต้นของคุณ คุณต้องเปิดใช้งานบนหน้าจอการตั้งค่า</string>
+
+    <string name="my_contacts">ที่อยู่ติดต่อของฉัน</string>
+    <string name="my_history">ประวัติของฉัน</string>
+    <string name="my_profile">ประวัติของฉัน</string>
+    <string name="my_qr_code">รหัส QR ของฉัน</string>
+
+    <string name="navigation_drawer_close">ปิดลิ้นชักโต้ตอบ</string>
+    <string name="navigation_drawer_open">เปิดกล่องโต้ตอบ</string>
+
+    <string name="never">ไม่เคย</string>
+
+    <string name="new_features">คุณลักษณะใหม่</string>
+    <string name="new_playlist_caps">PLAYLIST ใหม่</string>
+    <string name="new_tab">ใหม่</string>
+
+    <string name="next">ต่อไป</string>
+
+    <string name="nickname">ชื่อเล่น</string>
+
+    <string name="no_connections_yet">ยังไม่มีการเชื่อมต่อ</string>
+    <string name="no_copy_track">คัดลอกแทร็กล้มเหลว</string>
+    <string name="no_current_track">ไม่มีเพลงปัจจุบัน</string>
+    <string name="no_extension_error">ขออภัย Muziko ไม่สามารถแก้ไขไฟล์ได้หากไม่มีไฟล์ a</string>
+    <string name="no_friends">ยังไม่มีเพื่อน</string>
+    <string name="no_heart_track">แทร็กหัวใจล้มเหลว</string>
+    <string name="no_lastFm">โปรดป้อนข้อมูลรับรอง last.fm ของคุณ</string>
+    <string name="no_lyrics">ไม่พบเนื้อเพลง โปรดตรวจสอบชื่อศิลปินและชื่อแทร็ก</string>
+    <string name="no_network_connection">ไม่มีการเชื่อมต่อเครือข่าย</string>
+    <string name="no_playlists_yet_create_a_playlist">ไม่มีเพลย์ลิสต์สร้างเพลย์ลิสต์</string>
+    <string name="no_results">ไม่มีผลลัพธ์</string>
+    <string name="no_scrobbles_in_cache">ไม่มีแกรนิตแคช</string>
+    <string name="no_song_in_queue">ไม่มีเพลงในคิว</string>
+    <string name="no_songs_added">ขณะนี้ยังไม่มีเพลงเพิ่ม ไปข้างหน้าและเพิ่มบางส่วนหรือเพียงสับเปลี่ยนทั้งหมด</string>
+    <string name="no_songs_in_chart">ยังไม่มีเพลงในชาร์ต</string>
+    <string name="no_songs_in_ignore">ไม่มีเพลงในละเว้น</string>
+    <string name="no_songs_yet_start_adding_songs_to_favorite">ยังไม่มีเพลงโปรดเริ่มต้นเพิ่มเพลงในรายการโปรด</string>
+    <string name="no_space_error">การ์ด SD ของคุณเต็มไม่เพียงพอที่จะบันทึกข้อมูลนี้</string>
+    <string name="no_unique_filename">ไม่สามารถหาชื่อไฟล์ที่ไม่ซ้ำกัน</string>
+    <string name="no_want_save">ฉันไม่ต้องการบันทึก</string>
+
+    <string name="none">ไม่มี</string>
+
+    <string name="not_logged_in">ไม่ได้ลงชื่อเข้าใช้</string>
+
+    <string name="notification_cache">Notification Cache</string>
+
+    <string name="now_playing">กำลังเล่น</string>
+
+    <string name="nowplaying_last_at">ส่งการแจ้งเตือนล่าสุดเมื่อ:</string>
+    <string name="nowplaying_last_fail_at">การส่งสเปรดชีตล่าสุดล้มเหลวที่:</string>
+
+    <string name="number_of_songs">จำนวนเพลง</string>
+
+    <string name="ok">ตกลง</string>
+
+    <string name="one">หนึ่ง</string>
+
+    <string name="organize_playlists">จัดระเบียบเพลย์ลิสต์และแทร็กที่คุณชื่นชอบ</string>
+    <string name="organize_tracks">จัดระเบียบแทร็กของคุณ</string>
+
+    <string name="override">แทนที่</string>
+
+    <string name="pause">หยุด</string>
+
+    <string name="perm_required">ต้องได้รับอนุญาต</string>
+
+    <string name="play">เล่น</string>
+    <string name="play_all_songs">เล่นทั้งหมด</string>
+    <string name="play_error">ไม่สามารถเล่นไฟล์มีเดียนี้ได้</string>
+    <string name="play_from">เล่นจาก</string>
+    <string name="play_last_song_to_end">เล่นเพลงสุดท้ายเพื่อจบ</string>
+    <string name="play_list_name">ชื่อเพลย์ลิสต์</string>
+    <string name="play_next">เล่นต่อไป</string>
+    <string name="play_x_times">เล่นxกี่ครั้ง</string>
+
+    <string name="playlist_name">ชื่อเพลย์ลิสต์</string>
+
+    <string name="please_wait_with_dots">โปรดรอ...</string>
+
+    <string name="preset">ตั้งไว้ล่วงหน้า</string>
+
+    <string name="preview_track">ดูตัวอย่างเพลง</string>
+
+    <string name="privacy_policy_title">นโยบายความเป็นส่วนตัวของ Muziko</string>
+
+    <string name="problem_connecting_google">เกิดปัญหาในการเชื่อมต่อกับ Google</string>
+
+    <string name="profile_page">หน้าโปรไฟล์</string>
+
+    <string name="progress_dialog_loading">กำลังโหลด ...</string>
+
+    <string name="queue_empty">คิวว่างเปล่า</string>
+    <string name="queue_is_empty">คิวของคุณว่างเปล่า</string>
+
+    <string name="rate_us">ให้คะแนนเรา</string>
+
+    <string name="rating">คะแนน</string>
+
+    <string name="read_error">เกิดข้อผิดพลาดในการอ่านไฟล์</string>
+
+    <string name="recent">ล่าสุด</string>
+
+    <string name="record_error">เกิดข้อผิดพลาดในการเปิดตัว Sound Recorder</string>
+
+    <string name="register_share_music">ลงทะเบียนเพื่อแบ่งปันเพลงกับเพื่อนของคุณ</string>
+    <string name="register_using_google">ลงทะเบียนโดยใช้ Google</string>
+
+    <string name="remove">ลบออก</string>
+    <string name="remove_ads">ลบโฆษณา</string>
+    <string name="remove_ads_now">ลบโฆษณาตอนนี้</string>
+    <string name="remove_after">ลบออกหลังจาก</string>
+    <string name="remove_existing">ลบเพลย์ลิสต์ที่มีอยู่</string>
+    <string name="remove_fav">นำออกจากรายการโปรด</string>
+    <string name="remove_song_from_queue_after_x_times">ลบเพลงออกจากคิวหลังจาก X ครั้ง</string>
+
+    <string name="removed">นำออกแล้ว</string>
+
+    <string name="rename">เปลี่ยนชื่อ</string>
+    <string name="rename_cloud_account">เปลี่ยนชื่อบัญชีระบบคลาวด์</string>
+    <string name="rename_cloud_account_error">ไม่สามารถเปลี่ยนชื่อ</string>
+
+    <string name="reset_play_count">ลบประวัติเพลง</string>
+    <string name="reset_stats">รีเซ็ตสถิติ</string>
+
+    <string name="reverb">เสียงสะท้อน</string>
+
+    <string name="reverse">ย้อนกลับ</string>
+
+    <string name="ringtone_name">เสียงรอสาย</string>
+    <string name="ringtone_permissions">คุณแน่ใจหรือไม่ว่าจะอนุญาต?</string>
+    <string name="ringtone_type">ประเภทริงโทน</string>
+
+    <string name="save">บันทึก</string>
+    <string name="save_success_message">บันทึกแล้ว!</string>
+
+    <string name="saving_album_art">การบันทึกอัลบั้มรูป</string>
+
+    <string name="sc_sort_album_asc">อัลบั้มขึ้นไป</string>
+    <string name="sc_sort_album_desc">อัลบั้มเรียงจากน้อยไปมาก</string>
+    <string name="sc_sort_artist_asc">ศิลปินขึ้นไป</string>
+    <string name="sc_sort_artist_desc">ศิลปินลงไป</string>
+    <string name="sc_sort_track_asc">ชื่อแทร็ก, จากน้อยไปหามาก</string>
+    <string name="sc_sort_track_desc">ชื่อเพลงจากมากไปหาน้อย</string>
+    <string name="sc_sort_when_asc">เวลาเล่นขึ้น</string>
+    <string name="sc_sort_when_desc">เวลาที่เล่นลงไป</string>
+
+    <string name="scan">สแกน</string>
+    <string name="scan_media">สแกนสื่อ</string>
+
+    <string name="scrobble_last_at">ส่งข้อความล่าสุดที่:</string>
+    <string name="scrobble_last_fail_at">การส่งสเปรดชีตล่าสุดล้มเหลวที่:</string>
+    <string name="scrobble_now">Scrobble ตอนนี้</string>
+
+    <string name="scrobbles_cache_nonum">สควอร์กในแคชภายในเครื่อง:</string>
+
+    <string name="sd_card">การ์ด SD</string>
+
+    <string name="search">ค้นหา</string>
+    <string name="search_hint">ค้นหา</string>
+    <string name="search_online">ค้นหาทางอินเตอร์เน็ต</string>
+    <string name="search_song_or_artist">ค้นหาชื่อเพลงหรือนักร้อง</string>
+    <string name="search_user">ค้นหาผู้ใช้</string>
+
+    <string name="select_album_art">เลือกปกอัลบั้ม</string>
+    <string name="select_mp3s">เลือก MP3</string>
+
+    <string name="send">ส่ง</string>
+    <string name="send_au_clip">ตัดเพลงและส่ง</string>
+    <string name="send_song">ส่งเพลง</string>
+    <string name="send_wifi">ส่ง Wifi</string>
+
+    <string name="server_client_id">367762687557-urd3j7dp2qvuih8900gpfvn4u3m4cqh8.apps.googleusercontent.com</string>
+    <string name="server_later">ถามภายหลัง</string>
+    <string name="server_never">ไม่เคย</string>
+    <string name="server_prompt">ตกลงเพื่อส่งข้อมูลที่ไม่ระบุชื่อเกี่ยวกับเสียงเรียกเข้าและเสียงอื่น ๆ</string>
+    <string name="server_title">แบ่งปันข้อมูลของคุณ!</string>
+    <string name="server_yes">ตกลงเพื่อส่ง</string>
+
+    <string name="set_as_default_account">"ตั้งค่าเป็นบัญชีเริ่มต้น "</string>
+    <string name="set_as_ringtone">"ตั้งเป็นเสียงเรียกเข้า "</string>
+    <string name="set_as_start_directory">"ตั้งเป็นไดเรกทอรีเริ่มต้น "</string>
+    <string name="set_ringtone">ตั้งค่าเสียงเรียกเข้า</string>
+    <string name="set_ringtone_failed">ไม่สามารถตั้งค่าเสียงเรียกเข้าเริ่มต้น ขาดสิทธิ์</string>
+    <string name="set_start_time">"ตั้งเวลาเริ่มต้น "</string>
+    <string name="set_your_desired_position">ตั้งตำแหน่งที่คุณต้องการ</string>
+
+    <string name="settings">"การตั้งค่า "</string>
+
+    <string name="share">"แบ่งปัน "</string>
+    <string name="share_application">แชร์แอปพลิเคชัน</string>
+    <string name="share_code">แชร์รหัส</string>
+
+    <string name="sharesongs">แชร์เพลง</string>
+    <string name="sharesongs_desc">ใช้งานร่วมกันได้อย่างง่ายดายแบบออนไลน์กับรายชื่อติดต่อและ WiFi โดยตรงของคุณ</string>
+
+    <string name="shuffle_all">"สับเปลี่ยนทั้งหมด "</string>
+    <string name="shuffle_all_caps">SHUFFLE ALL</string>
+    <string name="shuffle_off">สลับออก</string>
+    <string name="shuffle_on">สลับแบบสุ่ม</string>
+
+    <string name="sign_in">"ลงชื่อเข้าใช้ "</string>
+    <string name="sign_out">"ออกจากระบบ "</string>
+
+    <string name="skip">SKIP</string>
+
+    <string name="sleep_timer">เวลานอน</string>
+    <string name="sleep_timer_caps">"เวลานอน "</string>
+
+    <string name="song_is_ready">เพลงพร้อม</string>
+    <string name="song_leading_space">เพลง</string>
+
+    <string name="songs_added_fav">เพลงที่เพิ่มลงในรายการโปรด</string>
+    <string name="songs_leading_space">เพลง</string>
+
+    <string name="sort_by_a_to_z">เรียงตาม A ถึง Z</string>
+    <string name="sort_by_date_ascending">เรียงตามวันที่เรียงจากน้อยไปมาก</string>
+    <string name="sort_by_date_descending">เรียงตามวันที่มากไปหาน้อย</string>
+    <string name="sort_by_duration_ascending">จัดเรียงตามระยะเวลาจากน้อยไปมาก</string>
+    <string name="sort_by_duration_descending">เรียงตามระยะเวลาจากมากไปหาน้อย</string>
+    <string name="sort_by_z_to_a">เรียงตาม Z ถึง A</string>
+
+    <string name="spend_4_99_one_time_on_muziko_and_never_see_ads">ใช้เวลา 4.99 $ ต่อ Muziko และไม่เคยเห็นโฆษณา</string>
+
+    <string name="start_marker">เริ่มเครื่องหมาย</string>
+    <string name="start_time">เวลาเริ่มต้น</string>
+    <string name="start_wifi_direct">START</string>
+
+    <string name="starting_scan">กำลังเริ่มสแกน</string>
+
+    <string name="stats_scrobbles">รวมเพลงที่ scrobbled:</string>
+
+    <string name="stop">หยุด</string>
+    <string name="stop_wifi_direct">หยุด</string>
+
+    <string name="storage">ที่จัดเก็บ</string>
+
+    <string name="stringValue103">เอบีซี</string>
+
+    <string name="stringValue104">DEF</string>
+
+    <string name="stringValue105">GHI</string>
+
+    <string name="stringValue106">JKL</string>
+
+    <string name="stringValue107">MNO</string>
+
+    <string name="stringValue108">PQRS</string>
+
+    <string name="stringValue109">TUV</string>
+
+    <string name="stringValue111">WXYZ</string>
+
+    <string name="stringValue112">ลบ</string>
+
+    <string name="stringValue113">ข้อมูล</string>
+
+    <string name="stringValue13">05:44</string>
+
+    <string name="stringValue14">00:00:00</string>
+
+    <string name="stringValue22">ยกเลิก</string>
+
+    <string name="stringValue25">20/02/2017</string>
+
+    <string name="stringValue40">0:00</string>
+
+    <string name="stringValue41">4:19</string>
+
+    <string name="stringValue46">เริ่ม MarkerView</string>
+
+    <string name="stringValue47">สิ้นสุด MarkerView</string>
+
+    <string name="stringValue48">15dB</string>
+
+    <string name="stringValue49">0เดซิเบล</string>
+
+    <string name="stringValue50">-15 ความดัง</string>
+
+    <string name="stringValue51">60 เมกะเฮิรตซ์</string>
+
+    <string name="stringValue52">230Hz</string>
+
+    <string name="stringValue53">910 เมกะเฮิรตซ์</string>
+
+    <string name="stringValue54">3 เมกะเฮิรตซ์</string>
+
+    <string name="stringValue55">0 เมกะเฮิรตซ์</string>
+
+    <string name="stringValue73">1:00 น</string>
+
+    <string name="stringValue83">aaaaa</string>
+
+    <string name="stringValue84">เพิ่ม</string>
+
+    <string name="stringValue85">เข้าสู่ระบบ</string>
+
+    <string name="stringValue86">2:59</string>
+
+    <string name="stringValue87">ความยาว</string>
+
+    <string name="stringValue88">(0 เพลง)</string>
+
+    <string name="stringValue89">Bradley Locke</string>
+
+    <string name="stringValue90">+9,929169300</string>
+
+    <string name="stringValue91">เพลง0เพลง</string>
+
+    <string name="stringValue92">00:10</string>
+
+    <string name="stringValue93">"หัวข้อ "</string>
+
+    <string name="stringValue98">ส่วนหัว</string>
+
+    <string name="stringValue99">00:20:00 น</string>
+
+    <string name="syncing_with_muziko_cloud_please_wait">"กำลังซิ่งค์ Muziko cloud โปรดรอสักครู่ "</string>
+
+    <string name="tag_edit">"แก้ไขแท็ก "</string>
+    <string name="tag_editor">ตัวแก้ไขแท็ก</string>
+    <string name="tag_editor_desc">ตัวแก้ไขแท็กทำให้การจัดระเบียบไลบรารีเพลงของคุณง่ายขึ้น</string>
+
+    <string name="tap_to_try_again">"แตะเพื่อลองอีกครั้ง "</string>
+
+    <string name="three">สาม</string>
+
+    <string name="threed_effect">ผล 3D</string>
+
+    <string name="time_seconds">วินาที</string>
+
+    <string name="title">หัวข้อ</string>
+    <string name="title_activity_favourites">FavouritesActivity</string>
+    <string name="title_activity_folders">FoldersActivity</string>
+    <string name="title_activity_most_played">MostPlayedActivity</string>
+    <string name="title_activity_mp3_cutter">MP3CutterActivity</string>
+    <string name="title_activity_mp3_cutter_new">Mp3CutterActivityNew</string>
+    <string name="title_activity_negative_folder">NegativeFolderActivity</string>
+    <string name="title_activity_now_playing">NowPlayingActivity</string>
+    <string name="title_activity_player_list">PlayerListActivity</string>
+    <string name="title_activity_playlist">PlaylistActivity</string>
+    <string name="title_activity_playlist_songs">PlaylistSongsActivity</string>
+    <string name="title_activity_recent">RecentActivityActivity</string>
+    <string name="title_activity_search">ค้นหา</string>
+
+    <string name="too_small_error">ไม่สามารถบันทึกไฟล์ที่มีขนาดเล็กลองใช้งานได้นานขึ้น</string>
+
+    <string name="track_not_found">"ไม่พบแทร็กอาจมีการย้ายหรือลบ "</string>
+    <string name="track_number">หมายเลขแทร็ก</string>
+    <string name="track_preview">ดูตัวอย่างเพลง</string>
+    <string name="track_title">ชื่อแทร็ก</string>
+
+    <string name="tracks">แทร็ค</string>
+
+    <string name="transition_name_coverart">การเปลี่ยนแปลง: COVERART</string>
+
+    <string name="trending_songs">"เพลงที่ได้รับความนิยม "</string>
+
+    <string name="two">สอง</string>
+
+    <string name="type_alarm">ปลุก</string>
+    <string name="type_music">เพลง</string>
+    <string name="type_notification">ประกาศ</string>
+    <string name="type_ringtone">ริงโทน</string>
+
+    <string name="unable_to_create_playlist">ไม่สามารถสร้างเพลงลิสต์ได้ !</string>
+    <string name="unable_to_identify_song">"ไม่สามารถระบุเพลง "</string>
+
+    <string name="unblock_contacts">เลิกบล็อกที่อยู่ติดต่อ</string>
+
+    <string name="undo">ยกเลิกก่อนหน้านี้</string>
+
+    <string name="unknown_album">อัลบั้มที่ไม่รู้จัก</string>
+    <string name="unknown_artist">ศิลปินที่ไม่รู้จัก</string>
+    <string name="unknown_genre">ประเภทที่ไม่รู้จัก</string>
+    <string name="unknown_mapi">"แอปที่ไม่รู้จัก (ก่อน SLS v1.2.3)"</string>
+
+    <string name="update_avatar">"อัพเดต avatar หรือชื่อผู้ใช้ของคุณ "</string>
+    <string name="update_muziko_prompt">อัปเดตเป็น Muziko เวอร์ชันล่าสุดเพื่อรับคุณลักษณะล่าสุด</string>
+
+    <string name="user_credentials_summary">ตั้งชื่อผู้ใช้และรหัสผ่านสำหรับบัญชี %1 ของคุณ</string>
+
+    <string name="version">รุ่น</string>
+
+    <string name="warning">คำเตือน</string>
+
+    <string name="what_to_do_ringtone">จะทำอย่างไรกับริงโทน?</string>
+
+    <string name="wifi_share">แชร์ Wifi</string>
+
+    <string name="write_error">เกิดข้อผิดพลาดในการเขียนไฟล์</string>
+    <string name="write_settings_perm">สิทธิ์การเขียนการเขียนไม่ได้ระบุไว้ Muziko ไม่สามารถตั้งค่าเสียงเรียกเข้าเริ่มต้นได้</string>
+
+    <string name="year">ปี</string>
+
+    <string name="yes">ใช่</string>
+
+    <string name="you_can_restore_ignore_later">คุณสามารถเรียกคืนจากโฟลเดอร์ละเว้นได้ในภายหลังคุณแน่ใจหรือไม่ว่าต้องการละเว้น</string>
+    <string name="connecting_cloud_drive">Syncing Cloud Drive</string>
+</resources>

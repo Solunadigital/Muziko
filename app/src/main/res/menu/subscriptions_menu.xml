@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/settings_showtracks"
+        android:title="Show my cloud tracks"
+        app:showAsAction="never"/>
+
+</menu>

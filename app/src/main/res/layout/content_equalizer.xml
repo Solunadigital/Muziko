@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/miniplayerHeight"
+    android:background="#f5f5f5"
+    android:clickable="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/simpletooltip_margin"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_marginLeft="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_weight="20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/simpletooltip_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/stringValue48"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="@dimen/simpletooltip_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/stringValue49"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="@dimen/simpletooltip_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/stringValue50"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_weight="20">
+
+                    <TextView
+                        android:id="@+id/slider1Layout"
+                        android:layout_width="@dimen/dimen_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:rotation="-90"
+                        android:text="@string/stringValue51"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                    <SeekBar
+                        android:id="@+id/mySeekBar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/slider1Layout"
+                        android:progressDrawable="@drawable/equalizer_progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/equalizer_thumb"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_weight="20">
+
+                    <TextView
+                        android:id="@+id/slider2Layout"
+                        android:layout_width="@dimen/dimen_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:rotation="-90"
+                        android:text="@string/stringValue52"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                    <SeekBar
+                        android:id="@+id/mySeekBar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/slider2Layout"
+                        android:progressDrawable="@drawable/equalizer_progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/equalizer_thumb"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_weight="20">
+
+
+                    <TextView
+                        android:id="@+id/slider3Layout"
+                        android:layout_width="@dimen/dimen_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:rotation="-90"
+                        android:text="@string/stringValue53"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                    <SeekBar
+                        android:id="@+id/mySeekBar3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/slider3Layout"
+                        android:progressDrawable="@drawable/equalizer_progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/equalizer_thumb"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_weight="20">
+
+                    <TextView
+                        android:id="@+id/slider4Layout"
+                        android:layout_width="@dimen/dimen_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:rotation="-90"
+                        android:text="@string/stringValue54"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                    <SeekBar
+                        android:id="@+id/mySeekBar4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/slider4Layout"
+                        android:progressDrawable="@drawable/equalizer_progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/equalizer_thumb"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_weight="20">
+
+                    <TextView
+                        android:id="@+id/slider5Layout"
+                        android:layout_width="@dimen/dimen_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:rotation="-90"
+                        android:text="@string/stringValue55"
+                        android:textColor="#818181"
+                        android:textSize="13sp"/>
+
+                    <SeekBar
+                        android:id="@+id/mySeekBar5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/slider5Layout"
+                        android:progressDrawable="@drawable/equalizer_progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/equalizer_thumb"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/simpletooltip_margin"
+            android:layout_weight="1"
+            android:background="#E9E9E9"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/reverbLayout"
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:text="@string/reverb"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_2dp"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:background="@color/light_gray"
+                />
+
+            <RelativeLayout
+                android:id="@+id/presetLayout"
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:text="@string/preset"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/simpletooltip_margin"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/simpletooltip_overlay_circle_offset"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:text="@string/loudness"
+                        android:textColor="#313131"/>
+
+                    <SeekBar
+                        android:id="@+id/loudnessSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                        android:max="100"
+                        android:progressDrawable="@drawable/equalizer_progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/equalizer_thumb"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:text="@string/bass"
+                        android:textColor="#313131"/>
+
+                    <SeekBar
+                        android:id="@+id/bassSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                        android:max="100"
+                        android:progressDrawable="@drawable/equalizer_progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/equalizer_thumb"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:text="@string/threed_effect"
+                        android:textColor="#313131"/>
+
+                    <SeekBar
+                        android:id="@+id/virtualizerSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                        android:max="100"
+                        android:progressDrawable="@drawable/equalizer_progress"
+                        android:secondaryProgress="0"
+                        android:thumb="@drawable/equalizer_thumb"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_2dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/simpletooltip_overlay_circle_offset"
+                android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+                android:background="@color/gray"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="@dimen/simpletooltip_margin"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loudnessText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/stringValue61"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/bassText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/stringValue61"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/virtualizerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/simpletooltip_margin"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/stringValue62"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

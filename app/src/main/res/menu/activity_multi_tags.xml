@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_mediascan"
+        android:title="@string/scan_media"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@mipmap/share_icon"
+        android:title="@string/share_application"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sharing_wifi"
+        app:showAsAction="never"
+        android:title="Receive a file" />
+    <item
+        android:id="@+id/action_exit"
+        android:title="@string/exit_application"
+        app:showAsAction="never"/>
+
+</menu>

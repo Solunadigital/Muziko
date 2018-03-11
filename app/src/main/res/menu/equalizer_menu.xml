@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/eqaulizer_toggle"
+        android:title="Switch"
+        app:actionLayout="@layout/menu_item_switch"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/eqaulizer_reset"
+        android:icon="@drawable/ic_restore_white_48dp"
+        android:title="Reset to default"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/eqaulizer_add"
+        android:icon="@drawable/ic_add_white_48dp"
+        android:title="Add"
+        app:showAsAction="always"/>
+
+
+</menu>

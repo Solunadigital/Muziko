@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageCover"
+        style="@style/SelectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/placeholder"/>
+
+    <RelativeLayout
+        android:id="@+id/playerSeekLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:background="@color/transparent_toolbar"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/playerSeekPositionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:text="@string/stringValue40"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/playerSeekDurationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+            android:text="@string/stringValue41"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</RelativeLayout>

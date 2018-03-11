@@ -1,0 +1,130 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/negative_search"
+        android:title="Search User"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/ignore_add"
+        android:icon="@drawable/ic_add_white_48dp"
+        android:title="@string/add_ignore"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/player_filter"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="Filter List"
+        app:showAsAction="always">
+
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/player_sort_title"
+                    android:orderInCategory="101"
+                    android:title="Title"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+
+                <item
+                    android:id="@+id/player_sort_album"
+                    android:orderInCategory="103"
+                    android:title="Album"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_artist"
+                    android:orderInCategory="104"
+                    android:title="Artist"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+            </group>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/reverse"
+                    android:checkable="true"
+                    android:orderInCategory="999"
+                    android:title="Reverse"
+                    app:actionViewClass="android.widget.CheckBox"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/negative_view"
+        android:icon="@mipmap/ic_view_grid"
+        android:title="Grid size"
+        app:showAsAction="never">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/grid_one"
+                    android:orderInCategory="200"
+                    android:title="One"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_two"
+                    android:orderInCategory="201"
+                    android:title="Two"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_three"
+                    android:orderInCategory="202"
+                    android:title="Three"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_four"
+                    android:orderInCategory="203"
+                    android:title="Four"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/negative_clear"
+        android:title="Empty Ignore Folder"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/negative_restore"
+        android:title="Restore Ignore Folder"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/negative_mediascan"
+        android:title="Scan Media"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/negative_share"
+        android:icon="@mipmap/share_icon"
+        android:title="Share Application"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sharing_wifi"
+        app:showAsAction="never"
+        android:title="Receive a file" />
+    <item
+        android:id="@+id/negative_exit"
+        android:title="Exit Application"
+        app:showAsAction="never"/>
+
+
+</menu>

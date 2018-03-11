@@ -1,0 +1,296 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:dialogTheme">@style/AppDialogTheme</item>
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/normal_blue</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <!--<item name="android:windowAnimationStyle">@null</item>-->
+        <item name="windowActionModeOverlay">true</item>
+        <!--<item name="android:textColor">@color/light_gray</item>-->
+        <item name="android:textColorHint">#6ec9f6</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/light_blue</item>
+
+        <item name="actionModeStyle">@style/actionModeStyle</item>
+        <item name="actionModeBackground">@color/normal_blue</item>
+        <item name="actionBarPopupTheme">@style/ActionModeOverflowMenu</item>
+
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+
+        <!--popup Menu style here-->
+        <item name="textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge
+        </item>
+        <item name="textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall
+        </item>
+        <item name="popupMenuStyle">@style/myPopupMenuStyle</item>
+        <item name="android:popupMenuStyle">@style/myPopupMenuStyle</item>
+
+        <item name="android:textViewStyle">@style/Widget.TextView.Black</item>
+
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="ActionModeOverflowMenu" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@color/white</item>
+    </style>
+
+    <style name="SubscriptionTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/subscription_purple</item>
+        <item name="colorPrimaryDark">@color/subscription_dark_purple</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">#212121</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="SubscriptionUpgradeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/subscription_brown</item>
+        <item name="colorPrimaryDark">@color/subscription_light_brown</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">#212121</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="WebTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/normal_blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">#212121</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="LoaderTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/background_splash_logo</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="MediumAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="AlbumArtEditTheme" parent="@style/Theme.AppCompat">
+        <item name="colorPrimary">@color/normal_blue</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="Widget.TextView.Black" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="toolbarText" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="CheckBoxStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="LightCheckBoxStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/normal_blue</item>
+        <item name="colorControlActivated">@color/normal_blue</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:color">@color/normal_blue</item>
+    </style>
+
+    <style name="SpinnerAsEditText" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@color/spinner_triangle</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textColorPrimary">@color/normal_blue</item>
+        <item name="android:textColorPrimaryInverse">@color/normal_blue</item>
+        <item name="actionMenuTextColor">@color/normal_blue</item>
+
+    </style>
+
+    <style name="actionModeStyle" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/normal_blue</item>
+    </style>
+
+    <style name="myPopupMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="background">@color/normal_blue</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceSmall"
+           parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceLarge"
+           parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MyTextAppearanceLarge"
+           parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MyTextAppearanceMedium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+
+
+    <style name="equalizerSeek">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:thumb">@drawable/equalizer_thumb</item>
+        <item name="android:progressDrawable">@drawable/equalizer_progress</item>
+
+    </style>
+
+    <style name="equalizerSeekTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|left</item>
+        <item name="android:textColor">#313131</item>
+    </style>
+
+
+    <style name="sleepRow">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="sleepDigit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="sleepText">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/timecode</item>
+
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">500dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.Base.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.Base.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Widget.DiscreteSeekBar" parent="android:Widget">
+        <item name="dsb_indicatorTextAppearance">@style/Widget.DiscreteIndicatorTextAppearance
+        </item>
+        <item name="dsb_progressColor">@color/dsb_progress_color_list</item>
+        <item name="dsb_trackColor">@color/dsb_track_color_list</item>
+        <item name="dsb_rippleColor">@color/dsb_ripple_color_list</item>
+        <item name="dsb_indicatorColor">@color/dsb_progress_color</item>
+        <item name="dsb_indicatorElevation">4dp</item>
+        <item name="dsb_mirrorForRtl">true</item>
+    </style>
+
+    <style name="Widget.DiscreteIndicatorTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="AppTheme">
+        <item name="android:colorBackground">@color/normal_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="QueueToolbarStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/light_gray</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/light_blue</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/normal_blue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomDigitsTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorLink">@color/normal_blue</item>
+        <item name="colorAccent">@color/normal_blue</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="simpletooltip_default" parent="@android:style/TextAppearance.Medium">
+
+    </style>
+</resources>

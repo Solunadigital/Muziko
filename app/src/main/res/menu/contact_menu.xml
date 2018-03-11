@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/contact_search"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/contact_add"
+        android:icon="@drawable/ic_person_add_white_24dp"
+        android:title="@string/add_contact"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/contact_filter"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="Filter List"
+        app:showAsAction="never">
+
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/contact_sort_title"
+                    android:orderInCategory="101"
+                    android:title="Name"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/contact_sort_online"
+                    android:orderInCategory="102"
+                    android:title="Online"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+            </group>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/reverse"
+                    android:checkable="true"
+                    android:orderInCategory="999"
+                    android:title="Reverse"
+                    app:actionViewClass="android.widget.CheckBox"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/contact_sync"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        android:title="Sync Contacts"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/contact_mediascan"
+        android:title="Scan Media"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/contact_share"
+        android:icon="@mipmap/share_icon"
+        android:title="Share Application"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sharing_wifi"
+        app:showAsAction="never"
+        android:title="Receive a file" />
+    <item
+        android:id="@+id/contact_exit"
+        android:title="Exit Application"
+        app:showAsAction="never"/>
+
+
+</menu>

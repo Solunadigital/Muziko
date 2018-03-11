@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/wifi"
+        android:icon="@drawable/ic_wifi_white_24dp"
+        android:title="Wifi"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/settings_about"
+        android:title="About"
+        app:showAsAction="never"/>
+
+</menu>

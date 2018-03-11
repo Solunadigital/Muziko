@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="@dimen/dimen_160dp"
+            android:layout_height="@dimen/dimen_160dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/register_google"/>
+
+        <TextView
+            android:id="@+id/introText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_width"
+            android:layout_marginTop="@dimen/simpletooltip_arrow_width"
+            android:gravity="center"
+            android:text="@string/register_share_music"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/nicknametext"
+                android:layout_width="@dimen/dimen_160dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/wave_height"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:text="@string/nickname"
+                android:textColor="#313131"
+                android:textSize="24sp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/google_red"
+            android:drawableLeft="@drawable/google_plus"
+            android:drawablePadding="@dimen/dimen_2dp"
+            android:paddingLeft="@dimen/simpletooltip_arrow_height"
+            android:paddingRight="@dimen/simpletooltip_arrow_height"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/register_using_google"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

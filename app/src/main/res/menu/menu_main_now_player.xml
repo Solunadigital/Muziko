@@ -1,0 +1,70 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/volume"
+        android:icon="@mipmap/volume_up_white"
+        android:title="Volume"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/lyrics"
+        android:icon="@drawable/lyrics_icon"
+        android:title="Lyrics"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_favourite"
+        android:title="Add to Favorites"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_goto_album"
+        android:title="Go to Album"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_goto_artist"
+        android:title="Go to Artist"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/action_ringtone"
+        android:title="Set As Ringtone"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_send_auclip"
+        android:title="Send AU-Clip"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_start_from"
+        android:title="Set Start Time"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_edit"
+        android:title="Tag Edit"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_details"
+        android:title="Details"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_help"
+        android:title="Show me"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_mediascan"
+        android:title="Scan Media"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+
+</menu>

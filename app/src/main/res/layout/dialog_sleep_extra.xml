@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/set70Button"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/timer_circle_bg"/>
+
+            <TextView
+                android:id="@+id/text70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/stringValue74"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/set80Button"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/timer_circle_bg"/>
+
+            <TextView
+                android:id="@+id/text80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/stringValue75"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/set90Button"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/timer_circle_bg"/>
+
+            <TextView
+                android:id="@+id/text390"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/stringValue76"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/set100Button"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/timer_circle_bg"/>
+
+            <TextView
+                android:id="@+id/text100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/stringValue77"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/set110Button"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/timer_circle_bg"/>
+
+            <TextView
+                android:id="@+id/text110"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/stringValue78"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/set120Button"
+            android:layout_width="@dimen/simpletooltip_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/timer_circle_bg"/>
+
+            <TextView
+                android:id="@+id/text120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:text="@string/stringValue79"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

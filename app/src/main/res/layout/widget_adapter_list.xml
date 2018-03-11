@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetrow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height"
+        android:orientation="horizontal"
+        android:padding="@dimen/simpletooltip_margin">
+
+
+        <LinearLayout
+            android:id="@+id/iconLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp">
+
+
+            <RelativeLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_5dp">
+
+                <ImageView
+                    android:id="@+id/imageThumb"
+                    android:layout_width="@dimen/pause_bar_width"
+                    android:layout_height="@dimen/pause_bar_width"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/upLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wave_height"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/iconLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/dummy_track"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/textDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1dp"
+                        android:maxLines="1"
+                        android:text="@string/dummy_artist"
+                        android:textColor="#9e9e9e"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <ImageView
+                        android:id="@+id/imageState"
+                        android:layout_width="@dimen/dimen_20dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_action_play_white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

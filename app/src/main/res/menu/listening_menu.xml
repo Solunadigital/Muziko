@@ -1,0 +1,270 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/player_search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item
+        android:id="@+id/player_identify"
+        android:title="Identify"
+        app:actionLayout="@layout/listening_ripple_mic"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/player_filter"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="@string/filter_list"
+        app:showAsAction="always">
+
+        <menu>
+            <group
+                android:id="@+id/sort_tracks"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/player_sort_tracks"
+                    android:orderInCategory="100"
+                    android:title="@string/track_number"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_tracktitle"
+                    android:orderInCategory="101"
+                    android:title="@string/title"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_filename"
+                    android:orderInCategory="102"
+                    android:title="@string/file_name"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_album"
+                    android:orderInCategory="103"
+                    android:title="@string/album"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_artist"
+                    android:orderInCategory="104"
+                    android:title="@string/artist"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/player_sort_trackduration"
+                    android:orderInCategory="105"
+                    android:title="@string/duration"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_year"
+                    android:orderInCategory="106"
+                    android:title="@string/year"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_trackdate"
+                    android:orderInCategory="107"
+                    android:title="@string/date_added"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_rating"
+                    android:orderInCategory="109"
+                    android:title="@string/rating"
+                    android:visible="false"
+                    app:showAsAction="never"/>
+
+            </group>
+            <group
+                android:id="@+id/sort_albums"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/player_sort_title"
+                    android:orderInCategory="101"
+                    android:title="@string/title"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_duration"
+                    android:orderInCategory="105"
+                    android:title="@string/duration"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_date"
+                    android:orderInCategory="107"
+                    android:title="@string/date_added"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_songs"
+                    android:orderInCategory="108"
+                    android:title="@string/number_of_songs"
+                    android:visible="false"
+                    app:showAsAction="never"/>
+
+            </group>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/reverse"
+                    android:checkable="true"
+                    android:orderInCategory="999"
+                    android:title="@string/reverse"
+                    app:actionViewClass="android.widget.CheckBox"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+
+    <!--<item-->
+    <!--android:id="@+id/media_route_menu_item"-->
+    <!--android:title="Cast"-->
+    <!--app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"-->
+    <!--app:showAsAction="always"/>-->
+
+    <!--<item-->
+    <!--android:id="@+id/share_audio"-->
+    <!--android:icon="@drawable/ic_screen_share_white_24dp"-->
+    <!--android:title="Share Audio"-->
+    <!--app:showAsAction="never">-->
+    <!--</item>-->
+
+
+    <item
+        android:id="@+id/storage_filter"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="@string/filter_storage"
+        app:showAsAction="never">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/player_storage_all"
+                    android:orderInCategory="200"
+                    android:title="@string/all"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_storage_internal"
+                    android:orderInCategory="201"
+                    android:title="@string/internal_storage"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_storage_sd"
+                    android:orderInCategory="202"
+                    android:title="@string/sd_card"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_storage_cloud"
+                    android:orderInCategory="203"
+                    android:title="@string/cloud"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_storage_cloud_filter"
+                    android:orderInCategory="204"
+                    android:title="@string/filter_cloud"
+                    app:showAsAction="never">
+                    <menu>
+                        <group android:checkableBehavior="single">
+                        </group>
+                    </menu>
+                </item>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/player_view"
+        android:icon="@mipmap/ic_view_grid"
+        android:title="@string/grid_size"
+        app:showAsAction="never">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/grid_one"
+                    android:orderInCategory="200"
+                    android:title="@string/one"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_two"
+                    android:orderInCategory="201"
+                    android:title="@string/two"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_three"
+                    android:orderInCategory="202"
+                    android:title="@string/three"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_four"
+                    android:orderInCategory="203"
+                    android:title="@string/four"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/player_play_songs"
+        android:title="@string/play_all_songs"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/shuffle_all"
+        android:title="@string/shuffle_all"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/player_mediascan"
+        android:title="@string/scan_media"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/player_share"
+        android:icon="@mipmap/share_icon"
+        android:title="@string/share_application"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sharing_wifi"
+        app:showAsAction="never"
+        android:title="Receive a file" />
+
+    <item
+        android:id="@+id/player_exit"
+        android:title="@string/exit_application"
+        app:showAsAction="never"/>
+
+</menu>

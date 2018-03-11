@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/dimen_250dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/normal_blue"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_200dp"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_20dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ads_logo"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/simpletooltip_overlay_circle_offset"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingRight="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/simpletooltip_overlay_circle_offset">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/remove_ads_now"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/simpletooltip_overlay_circle_offset"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingRight="@dimen/dimen_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/spend_4_99_one_time_on_muziko_and_never_see_ads"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/buyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/simpletooltip_overlay_circle_offset"
+                android:background="@color/normal_blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/simpletooltip_arrow_height"
+                    android:text="@string/buy_now"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+</FrameLayout>

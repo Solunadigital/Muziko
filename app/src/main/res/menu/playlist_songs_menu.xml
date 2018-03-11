@@ -1,0 +1,81 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/playlistsong_search"
+        android:title="Search Playlist"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/playlistsong_view"
+        android:icon="@mipmap/ic_view_grid"
+        android:title="Grid size"
+        app:showAsAction="never">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/grid_one"
+                    android:orderInCategory="200"
+                    android:title="One"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_two"
+                    android:orderInCategory="201"
+                    android:title="Two"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_three"
+                    android:orderInCategory="202"
+                    android:title="Three"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/grid_four"
+                    android:orderInCategory="203"
+                    android:title="Four"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+            </group>
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/playlistsong_add"
+        android:icon="@drawable/ic_add_white_48dp"
+        android:title="Add Songs"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/playlistsong_clear"
+        android:title="Clear Playlist"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/playlistsong_mediascan"
+        android:title="Scan Media"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/playlistsong_share"
+        android:icon="@mipmap/share_icon"
+        android:title="Share Application"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sharing_wifi"
+        app:showAsAction="never"
+        android:title="Receive a file" />
+    <item
+        android:id="@+id/playlistsong_exit"
+        android:title="Exit Application"
+        app:showAsAction="never"/>
+
+</menu>

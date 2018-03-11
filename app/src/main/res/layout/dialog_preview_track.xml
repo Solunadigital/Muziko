@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/dimen_20dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/track_preview"
+        android:textColor="#505659"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/simpletooltip_overlay_circle_offset"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+        android:gravity="center_horizontal"
+        android:text="@string/listen_to_10_seconds_song"
+        android:textColor="#858585"
+        android:textSize="16sp"/>
+
+    <SeekBar
+        android:id="@+id/playerSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+        android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+        android:progressDrawable="@drawable/preview_player_progress"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/preview_player_thumb"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+        android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset">
+
+        <TextView
+            android:id="@+id/startText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+            android:text="@string/stringValue40"
+            android:textColor="@color/new_gray_bg"/>
+
+        <TextView
+            android:id="@+id/endText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+            android:text="@string/stringValue92"
+            android:textColor="@color/new_gray_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/simpletooltip_overlay_circle_offset">
+
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/preview_circle_button"
+            android:padding="@dimen/simpletooltip_overlay_circle_offset"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_pause_white_48dp"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/preview_circle_button"
+            android:padding="@dimen/simpletooltip_overlay_circle_offset"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_play_arrow_white_48dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

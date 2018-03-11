@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/simpletooltip_margin">
+
+    <RelativeLayout
+        android:id="@+id/upLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height"
+        android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        >
+
+        <ImageView
+            android:id="@+id/songIcon"
+            android:layout_width="@dimen/wave_height"
+            android:layout_height="@dimen/wave_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/song_test"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/songIcon"
+            >
+
+            <TextView
+                android:id="@+id/songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_track"
+                android:textColor="#313131"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/artistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/songName"
+                android:layout_marginTop="@dimen/dimen_1dp"
+                android:text="@string/dummy_artist"
+                android:textColor="#727272"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:id="@+id/menuDropLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/simpletooltip_arrow_height">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+                    android:src="@mipmap/equalizer_icon_queue"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/simpletooltip_arrow_height"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+                    android:src="@mipmap/menu_grey"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/menuDrop"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menu_down"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/songIcon"
+            android:background="#e6e6e6"
+            />
+
+        <ImageView
+            android:id="@+id/blueIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/triangle_blue_top"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wave_height"
+        android:layout_below="@+id/upLayout"
+        android:background="@color/light_blue"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/setAsRingtone"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+                android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+                android:src="@mipmap/make_ringtone_icon"/>
+
+            <ImageView
+                android:id="@+id/editSongDetailButton"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+                android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+                android:src="@mipmap/edit_icon_white"/>
+
+            <ImageView
+                android:id="@+id/deleteSongButton"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_marginLeft="@dimen/simpletooltip_arrow_height"
+                android:layout_marginRight="@dimen/simpletooltip_arrow_height"
+                android:src="@mipmap/delete_icon_white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

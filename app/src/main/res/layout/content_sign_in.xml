@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.muziko.activities.SignInActivity"
+    tools:showIn="@layout/activity_sign_in">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="@dimen/dimen_160dp"
+            android:layout_height="@dimen/dimen_160dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/profile_placeholder"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+            <EditText
+                android:id="@+id/editNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_tag_artist"
+                android:hint="Username"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="18sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/auth_button"
+            android:layout_width="@dimen/dimen_280dp"
+            android:layout_height="@dimen/wave_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@color/normal_blue"
+            android:paddingLeft="@dimen/simpletooltip_arrow_height"
+            android:paddingRight="@dimen/simpletooltip_arrow_height"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/link_mobile_caps"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_20dp"/>
+
+        <Button
+            android:id="@+id/signoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:padding="@dimen/simpletooltip_arrow_height"
+            android:text="@string/sign_out"
+            android:textSize="20sp"
+            android:theme="@style/AppTheme.Button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

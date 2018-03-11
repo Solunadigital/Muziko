@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_msg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bugtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:paddingBottom="@dimen/simpletooltip_arrow_height"
+            android:paddingLeft="@dimen/simpletooltip_arrow_height"
+            android:paddingRight="@dimen/simpletooltip_arrow_height"
+            android:paddingTop="@dimen/simpletooltip_padding"
+            android:text="@string/no_lyrics"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="@dimen/wave_height"
+            android:layout_height="@dimen/wave_height"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/no_results"
+            android:src="@drawable/ic_error_outline_white_48dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

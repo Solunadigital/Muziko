@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/controlButtonLayout"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="@dimen/slidingLayoutHeight"
+    sothree:umanoScrollableView="@+id/itemList"
+    sothree:umanoShadowHeight="0dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.muziko.activities.PlaylistSongsActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Base.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/normal_blue"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ToolbarTheme"
+                app:popupTheme="@style/ToolbarPopupTheme"
+                app:titleTextAppearance="@style/toolbarText"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/content_playlist_songs"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/mainPlayerLayout"
+        layout="@layout/mini_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

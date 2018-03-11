@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 'android-P'
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 151
+        versionName "1.0.50"
+    }
+
+    lintOptions {
+        disable 'InvalidPackage', 'AllowBackup'
+    }
+    buildTypes {
+        debug {
+            testCoverageEnabled = true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //    compile ('com.microsoft.services.msa:msa-auth:0.8.4') {
+    //        exclude module: 'com.microsoft.services.msa'
+    //    }
+    implementation project(':msaauth')
+    implementation('com.microsoft.aad:adal:1.1.7') {
+        exclude module: 'com.microsoft.aad'
+    }
+    implementation('com.google.code.gson:gson:2.3.1') {
+        exclude module: 'com.google.code.gson'
+    }
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularSeekBar">
+        <attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+        <attr name="move_outside_circle" format="boolean"/>
+        <attr name="maintain_equal_circle" format="boolean"/>
+        <attr name="use_custom_radii" format="boolean"/>
+        <attr name="lock_enabled" format="boolean"/>
+        <attr name="circle_x_radius" format="dimension"/>
+        <attr name="circle_y_radius" format="dimension"/>
+        <attr name="circle_stroke_width" format="dimension"/>
+        <attr name="pointer_radius" format="dimension"/>
+        <attr name="pointer_halo_width" format="dimension"/>
+        <attr name="pointer_halo_border_width" format="dimension"/>
+        <attr name="circle_color" format="color"/>
+        <attr name="circle_progress_color" format="color"/>
+        <attr name="pointer_color" format="color"/>
+        <attr name="pointer_halo_color" format="color"/>
+        <attr name="pointer_halo_color_ontouch" format="color"/>
+        <attr name="pointer_alpha_ontouch" format="integer"/>
+        <attr name="start_angle" format="float"/>
+        <attr name="end_angle" format="float"/>
+        <attr name="circle_fill" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="rvp_triggerOffset" format="float"/>
+        <attr name="rvp_flingFactor" format="float"/>
+        <attr name="rvp_singlePageFling" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FastScrollRecyclerView">
+        <attr name="fastScrollThumbColor" format="reference|color"/>
+        <attr name="fastScrollTrackColor" format="reference|color"/>
+        <attr name="fastScrollPopupBgColor" format="reference|color"/>
+        <attr name="fastScrollPopupTextColor" format="reference|color"/>
+        <attr name="fastScrollAutoHide" format="reference|boolean"/>
+        <attr name="fastScrollAutoHideDelay" format="reference|integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="discreteSeekBarStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="MuzikoSeekBar">
+        <attr name="dsb_min" format="integer|dimension"/>
+        <attr name="dsb_max" format="integer|dimension"/>
+        <attr name="dsb_value" format="integer|dimension"/>
+        <attr name="dsb_mirrorForRtl" format="boolean"/>
+        <attr name="dsb_allowTrackClickToDrag" format="boolean"/>
+        <attr name="dsb_progressColor" format="color|reference"/>
+        <attr name="dsb_trackColor" format="color|reference"/>
+        <attr name="dsb_indicatorTextAppearance" format="reference"/>
+        <attr name="dsb_indicatorColor" format="color|reference"/>
+        <attr name="dsb_indicatorElevation" format="dimension"/>
+        <attr name="dsb_indicatorFormatter" format="string|reference"/>
+        <attr name="dsb_rippleColor" format="color|reference"/>
+        <attr name="dsb_indicatorPopupEnabled" format="boolean"/>
+        <attr name="dsb_trackHeight" format="integer|dimension"/>
+        <attr name="dsb_scrubberHeight" format="integer|dimension"/>
+        <attr name="dsb_thumbSize" format="integer|dimension"/>
+        <attr name="dsb_indicatorSeparation" format="integer|dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FreshDownloadView">
+        <attr name="circular_radius" format="dimension"/>
+        <attr name="circular_color" format="color"/>
+        <attr name="circular_progress_color" format="color"/>
+        <attr name="circular_width" format="dimension"/>
+        <attr name="progress_text_size" format="dimension"/>
+    </declare-styleable>
+
+    <dimen name="default_radius">80dp</dimen>
+
+    <color name="default_circular_color">#4c99d9</color>
+    <color name="default_circular_progress_color">#ffffff</color>
+    <dimen name="default_circular_width">3.5dp</dimen>
+    <dimen name="edge">10dp</dimen>
+    <dimen name="default_text_size">50sp</dimen>
+
+    <declare-styleable name="Lrc">
+        <attr name="textSize" format="dimension"/>
+        <attr name="currentTextSize" format="dimension"/>
+        <attr name="normalTextColor" format="reference|color"/>
+        <attr name="currentTextColor" format="reference|color"/>
+        <attr name="dividerHeight" format="dimension"/>
+        <attr name="rows" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RangeBar">
+        <attr name="tickStart" format="float"/>
+        <attr name="tickEnd" format="float"/>
+        <attr name="tickInterval" format="float"/>
+        <attr name="tickHeight" format="dimension"/>
+        <attr name="tickColor" format="color"/>
+        <attr name="barWeight" format="dimension"/>
+        <attr name="rangeBarColor" format="reference|color"/>
+        <attr name="rangeBarTextColor" format="reference|color" />
+        <attr name="pinColor" format="reference|color"/>
+        <attr name="selectorSize" format="dimension"/>
+        <attr name="pinPadding" format="dimension"/>
+        <attr name="pinMinFont" format="dimension"/>
+        <attr name="pinMaxFont" format="dimension"/>
+        <attr name="rangeBarPaddingBottom" format="dimension"/>
+        <attr name="selectorColor" format="reference|color"/>
+        <attr name="rangeBar" format="boolean"/>
+        <attr name="temporaryPins" format="boolean"/>
+        <attr name="connectingLineWeight" format="dimension"/>
+        <attr name="connectingLineColor" format="reference|color"/>
+        <attr name="pinRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingMusicNotesView">
+        <attr name="fallCount" format="integer"/>
+        <attr name="fallSpeed" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="IntlPhoneInput">
+        <attr name="intlPhoneInputTextSize" format="dimension"/>
+        <attr name="intlPhoneInputTextColor" format="color"/>
+        <attr name="flagPaddingEnd" format="dimension"/>
+        <attr name="flagPaddingStart" format="dimension"/>
+        <attr name="flagPaddingBottom" format="dimension"/>
+        <attr name="flagPaddingTop" format="dimension"/>
+        <attr name="textColorHint" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" />
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="wheel_font_path" format="string" />
+    </declare-styleable>
+</resources>

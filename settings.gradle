@@ -1,0 +1,1 @@
+include ':app', ':buswear', ':common', ':cloud', ':onedrivesdk', ':msaauth'

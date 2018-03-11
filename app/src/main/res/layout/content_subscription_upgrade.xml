@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/subscription_light_brown"
+        android:orientation="vertical"
+        tools:context="com.muziko.activities.SubscriptionUpgradeActivity"
+        tools:showIn="@layout/activity_subscription_upgrade">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/simpletooltip_arrow_height"
+            android:gravity="center"
+            android:text="You need to unlock your limit to store songs. You get limit of (50) songs for free. You have to buy a plan to increase your storage limit"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/simpletooltip_arrow_height"
+            android:gravity="left"
+            android:text="CURRENT PLAN"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparent_black_percent_70"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_rectangle">
+
+                    <TextView
+                        android:id="@+id/currentPlanLimitText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="50"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/currentPlanNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Free Plan"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_check_white_24dp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:maxLines="10"
+            android:text="PLEASE SELECT A PLAN\nBy selecting a new plan you wil be charged the amount below now and every month until you change or cancel your plan"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:id="@+id/planOneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/subscription_brown">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2">
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_rectangle">
+
+                    <TextView
+                        android:id="@+id/planOneLimitText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="200"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/planOneNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="$2 a month"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/planTwoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/subscription_brown">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2">
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_rectangle">
+
+                    <TextView
+                        android:id="@+id/planTwoLimitText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="300"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/planTwoNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="$3 a month"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/planThreeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/subscription_brown">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2">
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_rectangle">
+
+                    <TextView
+                        android:id="@+id/planThreeLimitText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="400"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/planThreeNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="$4 a month"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/planFourLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/subscription_brown">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2">
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_rectangle">
+
+                    <TextView
+                        android:id="@+id/planFourLimitText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="Unlimited"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/planFourNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="$9 a month"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

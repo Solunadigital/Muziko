@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/dimen_20dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/remove_after"
+        android:textColor="#505659"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/simpletooltip_overlay_circle_offset"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+        android:gravity="center_horizontal"
+        android:text="@string/remove_song_from_queue_after_x_times"
+        android:textColor="#858585"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/oneButton"
+            android:layout_width="@dimen/simpletooltip_arrow_width"
+            android:layout_height="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/line_spacing"
+            android:background="@drawable/hide_songs_circle_button"
+            android:text="@string/stringValue65"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/twoButton"
+            android:layout_width="@dimen/simpletooltip_arrow_width"
+            android:layout_height="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/line_spacing"
+            android:background="@drawable/hide_songs_circle_button"
+            android:text="@string/stringValue66"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/threeButton"
+            android:layout_width="@dimen/simpletooltip_arrow_width"
+            android:layout_height="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/line_spacing"
+            android:background="@drawable/hide_songs_circle_button"
+            android:text="@string/stringValue67"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/fourButton"
+            android:layout_width="@dimen/simpletooltip_arrow_width"
+            android:layout_height="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/line_spacing"
+            android:background="@drawable/hide_songs_circle_button"
+            android:text="@string/stringValue68"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/fiveButton"
+            android:layout_width="@dimen/simpletooltip_arrow_width"
+            android:layout_height="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/line_spacing"
+            android:background="@drawable/hide_songs_circle_button"
+            android:text="@string/stringValue69"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/sixButton"
+            android:layout_width="@dimen/simpletooltip_arrow_width"
+            android:layout_height="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/line_spacing"
+            android:background="@drawable/hide_songs_circle_button"
+            android:text="@string/stringValue70"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/sevenButton"
+            android:layout_width="@dimen/simpletooltip_arrow_width"
+            android:layout_height="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/line_spacing"
+            android:background="@drawable/hide_songs_circle_button"
+            android:text="@string/stringValue71"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/eightButton"
+            android:layout_width="@dimen/simpletooltip_arrow_width"
+            android:layout_height="@dimen/simpletooltip_arrow_width"
+            android:background="@drawable/hide_songs_circle_button"
+            android:text="@string/stringValue72"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

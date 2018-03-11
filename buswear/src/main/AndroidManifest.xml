@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="pl.tajchert.buswear">
+
+    <application>
+
+        <service
+            android:name="pl.tajchert.buswear.wear.EventCatcher"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,97 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/playlist_search"
+        android:title="Search Playlist"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/playlist_add"
+        android:icon="@drawable/ic_add_white_48dp"
+        android:title="Create Playlist"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="Filter List"
+        app:showAsAction="always">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/player_sort_title"
+                    android:orderInCategory="101"
+                    android:title="Title"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_duration"
+                    android:orderInCategory="105"
+                    android:title="Duration"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_date"
+                    android:orderInCategory="107"
+                    android:title="Date Added"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_songs"
+                    android:orderInCategory="108"
+                    android:title="Number of Songs"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/player_sort_custom"
+                    android:orderInCategory="109"
+                    android:title="Custom Reorder"
+                    app:actionLayout="@layout/action_layout_styled_checkbox"
+                    app:showAsAction="never"/>
+
+            </group>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/reverse"
+                    android:checkable="true"
+                    android:orderInCategory="999"
+                    android:title="Reverse"
+                    app:actionViewClass="android.widget.CheckBox"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/playlist_clearall"
+        android:icon="@mipmap/delete_icon_white"
+        android:title="Clear All"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/playlist_mediascan"
+        android:title="Scan Media"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/playlist_share"
+        android:icon="@mipmap/share_icon"
+        android:title="Share Application"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sharing_wifi"
+        app:showAsAction="never"
+        android:title="Receive a file" />
+    <item
+        android:id="@+id/playlist_exit"
+        android:title="Exit Application"
+        app:showAsAction="never"/>
+
+</menu>

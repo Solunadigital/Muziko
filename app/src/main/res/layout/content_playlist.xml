@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/miniplayerHeight"
+    android:clickable="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.muziko.activities.PlaylistActivity"
+    tools:showIn="@layout/activity_playlist">
+
+
+    <com.muziko.controls.FastScroller.FastScrollRecyclerView
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fastScrollAutoHide="true"
+        app:fastScrollAutoHideDelay="1000"
+        app:fastScrollPopupBgColor="@color/normal_blue"
+        app:fastScrollPopupTextColor="@android:color/white"
+        app:fastScrollThumbColor="@color/normal_blue"
+        app:fastScrollTrackColor="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ActivityIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/emptyplaylist_icon"/>
+
+        <TextView
+            android:id="@+id/explainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ActivityIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/simpletooltip_arrow_width"
+            android:layout_marginRight="@dimen/simpletooltip_arrow_width"
+            android:layout_marginTop="@dimen/simpletooltip_overlay_circle_offset"
+            android:gravity="center"
+            android:text="@string/no_playlists_yet_create_a_playlist"
+            android:textColor="@color/emptytextcolor"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

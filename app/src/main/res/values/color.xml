@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_text">#7D7D7D</color>
+    <color name="secondary_text">@color/white</color>
+
+    <color name="dark_blue">#008cc4</color>
+    <color name="normal_blue">#009cda</color>
+    <color name="light_blue">#20acf1</color>
+    <color name="overlay">#5020acf1</color>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+    <color name="dark_gray">#333333</color>
+    <color name="light_gray">#AFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">#595959</color>
+    <color name="redColor">#ca1548</color>
+    <color name="gray">#cccccc</color>
+    <color name="yellow">#FED631</color>
+    <color name="green">#4CFF00</color>
+    <color name="google_red">#DC4E41</color>
+
+    <color name="grayedout">#80C0C0C0</color>
+
+    <color name="transparent_toolbar">#26000000</color>
+    <color name="tag_button">#60CCCCCC</color>
+    <color name="spinner_triangle">#f5f5f5</color>
+    <color name="dialog_negetive_button">#848484</color>
+
+
+    <color name="waveform_selected">#28B6F6</color>
+    <color name="waveform_unselected">#D9D9D9</color>
+    <color name="waveform_unselected_bkgnd_overlay">#c8e7f4</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="grid_line">#66ffffff</color>
+    <color name="timecode">#838383</color>
+    <color name="timecode_shadow">#aa000000</color>
+
+    <color name="lyrics_toolbar_background">#26000000</color>
+    <color name="lyrics_background">#E6000000</color>
+
+    <color name="dsb_progress_color">#ff009688</color>
+    <color name="dsb_track_color">#ff939393</color>
+    <color name="dsb_disabled_color">#66939393</color>
+    <color name="dsb_ripple_color_pressed">#77939393</color>
+    <color name="dsb_ripple_color_focused">#99999999</color>
+
+    <color name="visualizer_four">#005A7E</color>
+    <color name="visualizer_three">#009cda</color>
+    <color name="visualizer_two">#18BDFF</color>
+    <color name="visualizer_one">#98E2FF</color>
+    <color name="visualizer_bg">#004460</color>
+
+    <color name="simpletooltip_background">@color/normal_blue</color>
+    <color name="simpletooltip_text">@android:color/primary_text_light</color>
+    <color name="simpletooltip_arrow">@color/normal_blue</color>
+
+    <color name="new_gray_bg">#d4d4d4</color>
+
+    <color name="titlecolor">#313131</color>
+    <color name="subtitlecolor">#727272</color>
+    <color name="emptytextcolor">#c2c2c2</color>
+    <color name="hidesongscirclecolor">#2cb4f6</color>
+    <color name="hidesongstextcolor">#B1B1B1</color>
+    <color name="invitepink">#FF4181</color>
+    <color name="lyricstext">#737373</color>
+    <color name="pink">#FE4080</color>
+    <color name="share_contact_overlay">#F4F3F3</color>
+    <color name="share_overlay">#D4F0FD</color>
+    <color name="ripple_light_blue">#4D20acf1</color>
+
+    <color name="transparent_coverart">#4D000000</color>
+    <color name="transparent_pink">#4DFE4080</color>
+    <color name="dim_gray">#6f6f6f</color>
+
+    <color name="my_color_highlight_press">#40808080</color>
+    <color name="my_color_highlight_focus">#80808080</color>
+
+    <color name="identifyblue">#4A99F0</color>
+    <color name="queue_playing_overlay">#3020acf1</color>
+
+    <color name="normal_blue_transparent">#80009cda</color>
+    <color name="subscription_purple">#7E57C2</color>
+    <color name="subscription_dark_purple">#644796</color>
+
+    <color name="subscription_brown">#5D3F22</color>
+    <color name="subscription_brown_disabled">#805D3F22</color>
+    <color name="subscription_light_brown">#754C24</color>
+    <color name="transparent_black_percent_70">#B3000000</color>
+
+    <color name="hometab_text">#707070</color>
+</resources>

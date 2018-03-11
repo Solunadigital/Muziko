@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyfishjy.library.RippleBackground
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="@dimen/dimen_50dp"
+    android:layout_height="@dimen/dimen_50dp"
+    android:background="@color/normal_blue"
+    app:rb_color="#4ABBF7"
+    app:rb_duration="4000"
+    app:rb_radius="10dp"
+    app:rb_rippleAmount="2"
+    app:rb_scale="2">
+
+    <ImageView
+        android:id="@+id/micImage"
+        android:layout_width="@dimen/dimen_26dp"
+        android:layout_height="@dimen/dimen_26dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_mic_white_24dp"/>
+
+</com.skyfishjy.library.RippleBackground>

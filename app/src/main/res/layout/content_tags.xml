@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <EditText
+                        android:id="@+id/editTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/tag_title"
+                        android:drawablePadding="@dimen/simpletooltip_overlay_circle_offset"
+                        android:hint="Title"
+                        android:paddingLeft="@dimen/simpletooltip_arrow_height"
+                        android:textColor="@color/lyricstext"
+                        android:textColorHint="@color/lyricstext"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <EditText
+                        android:id="@+id/editArtist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/tag_artist"
+                        android:drawablePadding="@dimen/simpletooltip_overlay_circle_offset"
+                        android:hint="Artist"
+                        android:paddingLeft="@dimen/simpletooltip_arrow_height"
+                        android:textColor="@color/lyricstext"
+                        android:textColorHint="@color/lyricstext"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <EditText
+                        android:id="@+id/editAlbum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/tag_album"
+                        android:drawablePadding="@dimen/simpletooltip_overlay_circle_offset"
+                        android:hint="Album"
+                        android:paddingLeft="@dimen/simpletooltip_arrow_height"
+                        android:textColor="@color/lyricstext"
+                        android:textColorHint="@color/lyricstext"
+                        android:textSize="18sp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/editGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/tag_genre"
+                        android:drawablePadding="@dimen/simpletooltip_overlay_circle_offset"
+                        android:hint="Genre"
+                        android:paddingLeft="@dimen/simpletooltip_arrow_height"
+                        android:textColor="@color/lyricstext"
+                        android:textColorHint="@color/lyricstext"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <EditText
+                        android:id="@+id/editYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/tag_year"
+                        android:drawablePadding="@dimen/simpletooltip_overlay_circle_offset"
+                        android:hint="Year"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/simpletooltip_arrow_height"
+                        android:textColor="@color/lyricstext"
+                        android:textColorHint="@color/lyricstext"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <EditText
+                        android:id="@+id/editNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/tag_tracks"
+                        android:drawablePadding="@dimen/simpletooltip_overlay_circle_offset"
+                        android:hint="Track Number"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/simpletooltip_arrow_height"
+                        android:textColor="@color/lyricstext"
+                        android:textColorHint="@color/lyricstext"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/lyricsSyncedTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_20dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lyrics_synced"
+                    android:textColor="@color/normal_blue"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/simpletooltip_overlay_circle_offset">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:paddingLeft="@dimen/bubble_size"
+                        android:paddingTop="@dimen/simpletooltip_arrow_height"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/tag_lyrics"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/simpletooltip_overlay_circle_offset"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/simpletooltip_overlay_circle_offset">
+
+
+                        <EditText
+                            android:id="@+id/editLyrics"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="top|center_horizontal"
+                            android:hint="Lyrics"
+                            android:inputType="textMultiLine"
+                            android:minHeight="@dimen/dimen_530dp"
+                            android:paddingLeft="@dimen/simpletooltip_arrow_height"
+                            android:textColor="@color/lyricstext"
+                            android:textColorHint="@color/lyricstext"
+                            android:textSize="18sp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_100dp"
+            android:layout_centerInParent="true"
+            android:elevation="4dp"
+            android:visibility="gone"
+            app:mlpb_enable_circle_background="false"
+            app:mlpb_progress_color="@color/normal_blue"
+            app:mlpb_progress_stoke_width="5dp"/>
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/normal_blue"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

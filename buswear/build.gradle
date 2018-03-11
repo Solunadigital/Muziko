@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 'android-P'
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+configurations {
+    provided {
+        dependencies.all { dep ->
+            configurations.default.exclude group: dep.group, module: dep.name
+        }
+    }
+
+    compile.extendsFrom provided
+}
+
+sourceSets {
+    test {
+        compileClasspath += configurations.provided
+        runtimeClasspath += configurations.provided
+    }
+}
+
+dependencies {
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    provided 'com.google.android.gms:play-services-wearable:11.6.2'
+}
+
