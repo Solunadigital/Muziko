@@ -49,16 +49,17 @@ import com.muziko.manager.AppController;
 import com.muziko.manager.FirebaseManager;
 import com.muziko.manager.PrefsManager;
 import com.muziko.mediaplayer.PlayerConstants;
+import com.muziko.tageditor.metadata.MusicMetadata;
 import com.squareup.picasso.Picasso;
 
 import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.cmc.music.common.ID3WriteException;
-import org.cmc.music.metadata.MusicMetadata;
-import org.cmc.music.metadata.MusicMetadataSet;
-import org.cmc.music.myid3.MyID3;
+
+
+import com.muziko.tageditor.metadata.MusicMetadataSet;
+import com.muziko.tageditor.myid3.MyID3;
 import org.greenrobot.eventbus.EventBus;
 
 import java.io.File;
@@ -472,22 +473,22 @@ public class TagsActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void showData() {
-        String title = metadata.getSongTitle();
-        if (title != null) editTitle.setText(title);
+        String title = item.title;
+        if (title != null) editTitle.setText(item.title);
 
-        String artist = metadata.getArtist();
-        if (artist != null) editArtist.setText(artist);
+        String artist = item.artist_name;
+        if (artist != null) editArtist.setText(item.artist_name);
 
-        String album = metadata.getAlbum();
-        if (album != null) editAlbum.setText(album);
+        String album = item.album_name;
+        if (album != null) editAlbum.setText(item.album_name);
 
-        String genre = metadata.getGenre();
-        if (genre != null) editGenre.setText(genre);
+        String genre = item.genre_name;
+        if (genre != null) editGenre.setText(item.genre_name);
 
-        Number number = metadata.getTrackNumber();
-        if (number != null) editNumber.setText(number.toString());
+        Number number = item.track;
+        if (number != null) editNumber.setText(item.track+"");
 
-        Object year = metadata.get(MusicMetadata.KEY_YEAR);
+        Object year = item.year;
         if (year != null) {
             if (year instanceof Number)
                 editYear.setText(year.toString());

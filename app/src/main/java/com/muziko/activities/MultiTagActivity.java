@@ -54,10 +54,10 @@ import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.cmc.music.common.ID3WriteException;
-import org.cmc.music.metadata.MusicMetadata;
-import org.cmc.music.metadata.MusicMetadataSet;
-import org.cmc.music.myid3.MyID3;
+import com.muziko.tageditor.common.ID3WriteException;
+import com.muziko.tageditor.metadata.MusicMetadata;
+import com.muziko.tageditor.metadata.MusicMetadataSet;
+import com.muziko.tageditor.myid3.MyID3;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;

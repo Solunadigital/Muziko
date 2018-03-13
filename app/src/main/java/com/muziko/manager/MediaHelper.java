@@ -21,9 +21,9 @@ import com.muziko.tasks.MusicLoader;
 import com.muziko.tasks.ScanMediaFiles;
 
 import org.apache.commons.io.FilenameUtils;
-import org.cmc.music.metadata.MusicMetadata;
-import org.cmc.music.metadata.MusicMetadataSet;
-import org.cmc.music.myid3.MyID3;
+import com.muziko.tageditor.metadata.MusicMetadata;
+import com.muziko.tageditor.metadata.MusicMetadataSet;
+import com.muziko.tageditor.myid3.MyID3;
 
 import java.io.File;
 import java.util.HashMap;

@@ -12,12 +12,12 @@ import com.muziko.common.models.QueueItem;
 import com.muziko.database.TrackRealmHelper;
 import com.muziko.helpers.Utils;
 import com.muziko.manager.AppController;
+import com.muziko.tageditor.metadata.ImageData;
+import com.muziko.tageditor.metadata.MusicMetadata;
+import com.muziko.tageditor.metadata.MusicMetadataSet;
+import com.muziko.tageditor.myid3.MyID3;
 import com.squareup.picasso.Picasso;
 
-import org.cmc.music.metadata.ImageData;
-import org.cmc.music.metadata.MusicMetadata;
-import org.cmc.music.metadata.MusicMetadataSet;
-import org.cmc.music.myid3.MyID3;
 
 import java.io.File;
 import java.io.FileOutputStream;

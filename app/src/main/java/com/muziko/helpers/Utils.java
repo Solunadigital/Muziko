@@ -47,10 +47,11 @@ import com.muziko.database.TrackRealmHelper;
 import com.muziko.manager.AppController;
 import com.muziko.manager.MediaHelper;
 import com.muziko.models.EqualizerItem;
+import com.muziko.tageditor.metadata.MusicMetadata;
+import com.muziko.tageditor.metadata.MusicMetadataSet;
+import com.muziko.tageditor.myid3.MyID3;
 
-import org.cmc.music.metadata.MusicMetadata;
-import org.cmc.music.metadata.MusicMetadataSet;
-import org.cmc.music.myid3.MyID3;
+
 import org.greenrobot.eventbus.EventBus;
 
 import java.io.File;
